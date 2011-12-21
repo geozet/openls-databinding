@@ -7,7 +7,7 @@
 	<packaging>jar</packaging>
 	<name>openls-databinding</name>
 	<description>GEOZET Open Location Service databinding packages.</description>
-	<url>https://github.com/geozet/</url>
+	<url>https://github.com/geozet/openls-databinding</url>
 	<developers>
 		<developer>
 			<id>mprins</id>
@@ -146,9 +146,9 @@
 	</issueManagement>
 	<inceptionYear>2010</inceptionYear>
 	<scm>
-		<connection>scm:git:git@github.com:git://github.com/geozet/geozet.git</connection>
-		<developerConnection>scm:git:git@github.com:git@github.com:geozet/geozet.git</developerConnection>
-		<url>https://github.com/geozet/geozet/tree/master/openls-databinding</url>
+		<connection>scm:git:git@github.com:git://github.com/geozet/openls-databinding.git</connection>
+		<developerConnection>scm:git:git@github.com:git@github.com:geozet/openls-databinding.git</developerConnection>
+		<url>https://github.com/geozet/openls-databinding/tree/master/</url>
 	</scm>
 	<organization>
 		<name>team GEOZET</name>
@@ -339,8 +339,6 @@
 								<issueLinkUrl>%URL%/view.php?id=%ISSUE%</issueLinkUrl>
 								<publishDateLocale>nl</publishDateLocale>
 							</configuration>
-							<!--&project_id=45 %URL%/ViewIssue.jspa?key=%ISSUE%. -->
-							<!-- http://standaardbeheer.geonovum.nl/view.php?id=3580 -->
 							<reportSets>
 								<reportSet>
 									<reports>
