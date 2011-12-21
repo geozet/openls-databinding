@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<project name="${project.name} ${project.version}" xmlns="http://maven.apache.org/DECORATION/1.0.0"
+<project name="${project.name} ${project.version}" xmlns="http://maven.apache.org/DECORATION/1.1.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.1.0 http://maven.apache.org/xsd/decoration-1.1.0.xsd">
 	<publishDate position="left" format="dd-MMMM-yyyy" />
 	<version position="left" />
 	<skin>
@@ -16,7 +16,7 @@
 		<href>http://geonovum.nl/</href>
 	</bannerLeft>
 	<bannerRight>
-		<name>PDOK OLS databinding</name>
+		<name>${project.name}</name>
 		<!-- <src>http://maven.apache.org/images/maven-small.gif</src> -->
 	</bannerRight>
 	<body>
@@ -24,14 +24,13 @@
 			<meta name="faq" content="geozet" />
 		</head>
 		<links>
-			<item name="Wiki" href="#" />
-			<item name="Hudson dashboard" href="#" />
-			<item name="Maven Proxy" href="#" />
+			<item name="Wiki" href="https://github.com/geozet/openls-databinding/wiki" />
+			<item name="Jenkins" href="http://gisdemo.agro.nl/jenkins/" />
 		</links>
 		<menu name="Links">
 			<item name="Wiki" href="#" />
-			<item name="Trunk Build results" href="#" />
-			<item name="Hudson dashboard" href="#" />
+			<item name="Trunk Build results" href="http://gisdemo.agro.nl/jenkins/job/openls-databinding/lastBuild/" />
+			<item name="Jenkins dashboard" href="http://gisdemo.agro.nl/jenkins/" />
 		</menu>
 		<menu name="Overview">
 			<item name="Release notes" href="/releasenotes.html" />
@@ -39,8 +38,6 @@
 			<item name="Technisch Ontwerp" href="/technisch_ontwerp.html" />
 			<item name="FAQ meldingen" href="/faq.html" />
 		</menu>
-		<menu ref="modules" />
-		<menu ref="parent" />
 		<menu ref="reports" />
 	</body>
 </project>
