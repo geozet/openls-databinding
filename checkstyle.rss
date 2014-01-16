@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>openls-databinding - Checkstyle report</title>
+    <link>https://github.com/geozet/openls-databinding</link>
+    <description>openls-databinding - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2014 team GEOZET</copyright>
+    <item>
+      <title>File: 21,
+             Errors: 0,
+             Warnings: 255,
+             Infos: 7
+      </title>
+            <link>https://github.com/geozet/openls-databinding/checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://github.com/geozet/openls-databinding/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.gml.CoordinatesType.java">nl/geozet/openls/databinding/gml/CoordinatesType.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.GeocodeRequest.java">nl/geozet/openls/databinding/openls/GeocodeRequest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.parser.package-info.java">nl/geozet/openls/parser/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.gml.Pos.java">nl/geozet/openls/databinding/gml/Pos.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  30
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.Building.java">nl/geozet/openls/databinding/openls/Building.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.Place.java">nl/geozet/openls/databinding/openls/Place.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.parser.OpenLSResponseParser.java">nl/geozet/openls/parser/OpenLSResponseParser.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.package-info.java">nl/geozet/openls/databinding/openls/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.gml.Point.java">nl/geozet/openls/databinding/gml/Point.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.parser.OpenLSRequestParser.java">nl/geozet/openls/parser/OpenLSRequestParser.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.common.package-info.java">nl/geozet/openls/databinding/common/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.gml.package-info.java">nl/geozet/openls/databinding/gml/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.Address.java">nl/geozet/openls/databinding/openls/Address.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  36
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.OpenLSConstants.java">nl/geozet/openls/databinding/openls/OpenLSConstants.java</a>
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.Street.java">nl/geozet/openls/databinding/openls/Street.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.GeocodeResponseList.java">nl/geozet/openls/databinding/openls/GeocodeResponseList.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.StreetAddress.java">nl/geozet/openls/databinding/openls/StreetAddress.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.GeocodedAddress.java">nl/geozet/openls/databinding/openls/GeocodedAddress.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.common.XmlNamespaceConstants.java">nl/geozet/openls/databinding/common/XmlNamespaceConstants.java</a>
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.PostalCode.java">nl/geozet/openls/databinding/openls/PostalCode.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding/checkstyle.html#nl.geozet.openls.databinding.openls.GeocodeResponse.java">nl/geozet/openls/databinding/openls/GeocodeResponse.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
