@@ -125,6 +125,7 @@
 					<verbose>true</verbose>
 				</configuration>
 			</plugin>
+			<!--
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -161,6 +162,7 @@
 					<stylesheet>maven</stylesheet>
 				</configuration>
 			</plugin>
+			-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
@@ -207,11 +209,7 @@
 							<version>2.9.1</version>
 							<configuration>
 								<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
-								<additionalparam>-all</additionalparam>
-								<additionalparam>-inferrel</additionalparam>
-								<additionalparam>-inferreltype</additionalparam>
-								<additionalparam>-inferdep</additionalparam>
-								<additionalparam>-hide java.*</additionalparam>
+								<additionalparam>-all -hide java.* -hide javax.* -hide org.* -inferrel -inferreltype -inferdep -useimports</additionalparam>
 								<docletArtifact>
 									<groupId>org.umlgraph</groupId>
 									<artifactId>umlgraph</artifactId>
@@ -237,7 +235,6 @@
 										<head>To Do:</head>
 									</tag>
 								</tags>
-								<stylesheet>maven</stylesheet>
 							</configuration>
 						</plugin>
 						<plugin>
