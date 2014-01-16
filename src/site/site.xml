@@ -24,7 +24,7 @@
 			<meta name="faq" content="geozet" />
 		</head>
 		<links>
-			<item name="Wiki" href="https://github.com/geozet/openls-databinding/wiki" />
+			<item name="Wiki" href="https://github.com/geozet/openls-databinding/wiki/" />
 			<item name="Jenkins" href="http://gisdemo.agro.nl/jenkins/" />
 		</links>
 		<menu name="Links">
