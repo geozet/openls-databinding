@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="c0" href="./OpenLSResponseParserTest.html" title="nl.geozet.openls.OpenLSResponseParserTest" alt="" coords="16,17,205,42"/>
-<area shape="rect" id="node1" href="./OpenLSResponseParserTest.html" title="&lt;TABLE&gt;" alt="" coords="5,5,216,53"/>
-<area shape="rect" id="c1" href="./OpenLSRequestParserTest.html" title="nl.geozet.openls.OpenLSRequestParserTest" alt="" coords="251,17,429,42"/>
-<area shape="rect" id="node2" href="./OpenLSRequestParserTest.html" title="&lt;TABLE&gt;" alt="" coords="240,5,440,53"/>
+<area shape="rect" id="c0" href="./OpenLSResponseParserTest.html" title="nl.geozet.openls.OpenLSResponseParserTest" alt="" coords="15,11,238,117"/>
+<area shape="rect" id="node1" href="./OpenLSResponseParserTest.html" title="&lt;TABLE&gt;" alt="" coords="5,6,248,122"/>
+<area shape="rect" id="c1" href="./OpenLSRequestParserTest.html" title="nl.geozet.openls.OpenLSRequestParserTest" alt="" coords="283,11,496,117"/>
+<area shape="rect" id="node2" href="./OpenLSRequestParserTest.html" title="&lt;TABLE&gt;" alt="" coords="272,6,507,122"/>
 </map>

@@ -14,11 +14,34 @@ digraph G {
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> StreetAddress </td></tr>
 		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + StreetAddress() </td></tr>
+<tr><td align="left" balign="left"> + setBuilding(building : Building) </td></tr>
+<tr><td align="left" balign="left"> + getBuilding() : Building </td></tr>
+<tr><td align="left" balign="left"> + hasBuilding() : boolean </td></tr>
+<tr><td align="left" balign="left"> + setStreet(street : Street) </td></tr>
+<tr><td align="left" balign="left"> + getStreet() : Street </td></tr>
+<tr><td align="left" balign="left"> + hasStreet() : boolean </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
+		</table></td></tr>
 		</table>>, URL="./StreetAddress.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.Street
 	c39 [label=<<table title="nl.geozet.openls.databinding.openls.Street" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Street.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Street </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + Street() </td></tr>
+<tr><td align="left" balign="left"> + setStreet(street : String) </td></tr>
+<tr><td align="left" balign="left"> + getStreet() : String </td></tr>
+<tr><td align="left" balign="left"> + hasStreet() : boolean </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Street.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.PostalCode
@@ -26,11 +49,34 @@ digraph G {
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PostalCode </td></tr>
 		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + PostalCode() </td></tr>
+<tr><td align="left" balign="left"> + setPostalCode(postalCode : String) </td></tr>
+<tr><td align="left" balign="left"> + getPostalCode() : String </td></tr>
+<tr><td align="left" balign="left"> + hasPostalCode() : boolean </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
+		</table></td></tr>
 		</table>>, URL="./PostalCode.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.Place
 	c41 [label=<<table title="nl.geozet.openls.databinding.openls.Place" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Place.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Place </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + Place() </td></tr>
+<tr><td align="left" balign="left"> + setType(type : String) </td></tr>
+<tr><td align="left" balign="left"> + getType() : String </td></tr>
+<tr><td align="left" balign="left"> + hasType() : boolean </td></tr>
+<tr><td align="left" balign="left"> + setPlace(place : String) </td></tr>
+<tr><td align="left" balign="left"> + getPlace() : String </td></tr>
+<tr><td align="left" balign="left"> + hasPlace() : boolean </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Place.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.OpenLSConstants
@@ -39,11 +85,31 @@ digraph G {
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> OpenLSConstants </td></tr>
 		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + PLACE_TYPE_COUNTRYSUBDIVISION : String </td></tr>
+<tr><td align="left" balign="left"> + PLACE_TYPE_MUNICIPALITY : String </td></tr>
+<tr><td align="left" balign="left"> + PLACE_TYPE_MUNICIPALITYSUBDIVISION : String </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
 		</table>>, URL="./OpenLSConstants.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.GeocodeResponseList
 	c43 [label=<<table title="nl.geozet.openls.databinding.openls.GeocodeResponseList" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GeocodeResponseList.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> GeocodeResponseList </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + GeocodeResponseList() </td></tr>
+<tr><td align="left" balign="left"> + addGeocodedAddress(val : GeocodedAddress) </td></tr>
+<tr><td align="left" balign="left"> + getGeocodedAddressAt(i : int) : GeocodedAddress </td></tr>
+<tr><td align="left" balign="left"> + getGeocodedAddressSize() : int </td></tr>
+<tr><td align="left" balign="left"> + setNumberOfGeocodedAddresses(val : int) </td></tr>
+<tr><td align="left" balign="left"> + getNumberOfGeocodedAddresses() : int </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
 		</table></td></tr>
 		</table>>, URL="./GeocodeResponseList.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.GeocodeResponse
@@ -51,11 +117,31 @@ digraph G {
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> GeocodeResponse </td></tr>
 		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + GeocodeResponse() </td></tr>
+<tr><td align="left" balign="left"> + addGeocodeResponseList(val : GeocodeResponseList) </td></tr>
+<tr><td align="left" balign="left"> + getGeocodeResponseListAt(i : int) : GeocodeResponseList </td></tr>
+<tr><td align="left" balign="left"> + getGeocodeResponseListSize() : int </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
+		</table></td></tr>
 		</table>>, URL="./GeocodeResponse.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.GeocodeRequest
 	c45 [label=<<table title="nl.geozet.openls.databinding.openls.GeocodeRequest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GeocodeRequest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> GeocodeRequest </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + GeocodeRequest() </td></tr>
+<tr><td align="left" balign="left"> + addAddress(val : Address) </td></tr>
+<tr><td align="left" balign="left"> + getAddressAt(i : int) : Address </td></tr>
+<tr><td align="left" balign="left"> + getAddressSize() : int </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
 		</table></td></tr>
 		</table>>, URL="./GeocodeRequest.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.GeocodedAddress
@@ -63,11 +149,40 @@ digraph G {
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> GeocodedAddress </td></tr>
 		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + GeocodedAddress() </td></tr>
+<tr><td align="left" balign="left"> + setPoint(point : Point) </td></tr>
+<tr><td align="left" balign="left"> + getPoint() : Point </td></tr>
+<tr><td align="left" balign="left"> + hasPoint() : boolean </td></tr>
+<tr><td align="left" balign="left"> + setAddress(address : Address) </td></tr>
+<tr><td align="left" balign="left"> + getAddress() : Address </td></tr>
+<tr><td align="left" balign="left"> + hasAddress() : boolean </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
+		</table></td></tr>
 		</table>>, URL="./GeocodedAddress.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.Building
 	c47 [label=<<table title="nl.geozet.openls.databinding.openls.Building" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Building.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Building </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + Building() </td></tr>
+<tr><td align="left" balign="left"> + setNumber(number : String) </td></tr>
+<tr><td align="left" balign="left"> + getNumber() : String </td></tr>
+<tr><td align="left" balign="left"> + hasNumber() : boolean </td></tr>
+<tr><td align="left" balign="left"> + setSubdivision(subdivision : String) </td></tr>
+<tr><td align="left" balign="left"> + getSubdivision() : String </td></tr>
+<tr><td align="left" balign="left"> + hasSubdivision() : boolean </td></tr>
+<tr><td align="left" balign="left"> + setBuildingName(buildingName : String) </td></tr>
+<tr><td align="left" balign="left"> + getBuildingName() : String </td></tr>
+<tr><td align="left" balign="left"> + hasBuildingName() : boolean </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Building.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.Address
@@ -75,6 +190,38 @@ digraph G {
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Address </td></tr>
 		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + Address() </td></tr>
+<tr><td align="left" balign="left"> + Address(countryCode : String, streetAddress : StreetAddress, postalCode : PostalCode) </td></tr>
+<tr><td align="left" balign="left"> + setCountryCode(countryCode : String) </td></tr>
+<tr><td align="left" balign="left"> + getCountryCode() : String </td></tr>
+<tr><td align="left" balign="left"> + hasCountryCode() : boolean </td></tr>
+<tr><td align="left" balign="left"> + setStreetAddress(streetAddress : StreetAddress) </td></tr>
+<tr><td align="left" balign="left"> + getStreetAddress() : StreetAddress </td></tr>
+<tr><td align="left" balign="left"> + hasStreetAddress() : boolean </td></tr>
+<tr><td align="left" balign="left"> + setPostalCode(postalCode : PostalCode) </td></tr>
+<tr><td align="left" balign="left"> + getPostalCode() : PostalCode </td></tr>
+<tr><td align="left" balign="left"> + hasPostalCode() : boolean </td></tr>
+<tr><td align="left" balign="left"> + addPlace(val : Place) </td></tr>
+<tr><td align="left" balign="left"> + getPlaceAt(i : int) : Place </td></tr>
+<tr><td align="left" balign="left"> + getPlaceSize() : int </td></tr>
+<tr><td align="left" balign="left"> + getPlaceByType(type : String) : String </td></tr>
+<tr><td align="left" balign="left"> + hasPlaceType(type : String) : boolean </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
+		</table></td></tr>
 		</table>>, URL="./Address.html", fontname="arial", fontcolor="black", fontsize=10.0];
+	// nl.geozet.openls.databinding.openls.StreetAddress NAVASSOC nl.geozet.openls.databinding.openls.Building
+	c38:p -> c47:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// nl.geozet.openls.databinding.openls.StreetAddress NAVASSOC nl.geozet.openls.databinding.openls.Street
+	c38:p -> c39:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// nl.geozet.openls.databinding.openls.GeocodedAddress NAVASSOC nl.geozet.openls.databinding.openls.Address
+	c46:p -> c48:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// nl.geozet.openls.databinding.openls.Address NAVASSOC nl.geozet.openls.databinding.openls.StreetAddress
+	c48:p -> c38:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// nl.geozet.openls.databinding.openls.Address NAVASSOC nl.geozet.openls.databinding.openls.PostalCode
+	c48:p -> c40:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

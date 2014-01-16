@@ -10,18 +10,21 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// nl.geozet.openls.parser.OpenLSResponseParser
-	c259 [label=<<table title="nl.geozet.openls.parser.OpenLSResponseParser" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./OpenLSResponseParser.html">
+	c261 [label=<<table title="nl.geozet.openls.parser.OpenLSResponseParser" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./OpenLSResponseParser.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> OpenLSResponseParser </td></tr>
 		</table></td></tr>
-		</table>>, URL="./OpenLSResponseParser.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	//nl.geozet.openls.parser.OpenLSResponseParser extends org.xml.sax.helpers.DefaultHandler
-	c261:p -> c259:p [dir=back,arrowtail=empty];
-	// org.xml.sax.helpers.DefaultHandler
-	c261 [label=<<table title="org.xml.sax.helpers.DefaultHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://download.oracle.com/javase/7/docs/api/org/xml/sax/helpers/DefaultHandler.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> DefaultHandler </td></tr>
+<tr><td align="left" balign="left">  </td></tr>
 		</table></td></tr>
-		</table>>, URL="http://download.oracle.com/javase/7/docs/api/org/xml/sax/helpers/DefaultHandler.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + OpenLSResponseParser() </td></tr>
+<tr><td align="left" balign="left"> + parseOpenLSResponse(data : String) : GeocodeResponse </td></tr>
+<tr><td align="left" balign="left"> + startElement(uri : String, localName : String, qName : String, attributes : Attributes) </td></tr>
+<tr><td align="left" balign="left"> + endElement(uri : String, localName : String, qName : String) </td></tr>
+<tr><td align="left" balign="left"> + characters(ch : char[], start : int, length : int) </td></tr>
+<tr><td align="left" balign="left"> + getGeocodeResponse() : GeocodeResponse </td></tr>
+		</table></td></tr>
+		</table>>, URL="./OpenLSResponseParser.html", fontname="arial", fontcolor="black", fontsize=10.0];
 }
 

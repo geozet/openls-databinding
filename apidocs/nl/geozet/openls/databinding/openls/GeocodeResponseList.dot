@@ -10,9 +10,21 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// nl.geozet.openls.databinding.openls.GeocodeResponseList
-	c180 [label=<<table title="nl.geozet.openls.databinding.openls.GeocodeResponseList" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./GeocodeResponseList.html">
+	c187 [label=<<table title="nl.geozet.openls.databinding.openls.GeocodeResponseList" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./GeocodeResponseList.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> GeocodeResponseList </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + GeocodeResponseList() </td></tr>
+<tr><td align="left" balign="left"> + addGeocodedAddress(val : GeocodedAddress) </td></tr>
+<tr><td align="left" balign="left"> + getGeocodedAddressAt(i : int) : GeocodedAddress </td></tr>
+<tr><td align="left" balign="left"> + getGeocodedAddressSize() : int </td></tr>
+<tr><td align="left" balign="left"> + setNumberOfGeocodedAddresses(val : int) </td></tr>
+<tr><td align="left" balign="left"> + getNumberOfGeocodedAddresses() : int </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
 		</table></td></tr>
 		</table>>, URL="./GeocodeResponseList.html", fontname="arial", fontcolor="black", fontsize=10.0];
 }

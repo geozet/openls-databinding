@@ -10,9 +10,26 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// nl.geozet.openls.databinding.gml.Pos
-	c297 [label=<<table title="nl.geozet.openls.databinding.gml.Pos" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Pos.html">
+	c298 [label=<<table title="nl.geozet.openls.databinding.gml.Pos" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Pos.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Pos </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + Pos() </td></tr>
+<tr><td align="left" balign="left"> + setXY(xy : String) </td></tr>
+<tr><td align="left" balign="left"> + setX(x : Double) </td></tr>
+<tr><td align="left" balign="left"> + getX() : Double </td></tr>
+<tr><td align="left" balign="left"> + setY(y : Double) </td></tr>
+<tr><td align="left" balign="left"> + getY() : Double </td></tr>
+<tr><td align="left" balign="left"> + getXY() : String </td></tr>
+<tr><td align="left" balign="left"> + hasXY() : boolean </td></tr>
+<tr><td align="left" balign="left"> + setDimension(dimension : int) </td></tr>
+<tr><td align="left" balign="left"> + getDimension() : int </td></tr>
+<tr><td align="left" balign="left"> + hasDimension() : boolean </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Pos.html", fontname="arial", fontcolor="black", fontsize=10.0];
 }
