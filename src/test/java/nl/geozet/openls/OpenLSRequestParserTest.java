@@ -44,19 +44,25 @@ public class OpenLSRequestParserTest extends TestCase {
             String fileName = "/samplerequests/" + fileIt.next().getName();
             String requestString = readFileAsString(fileName);
             GeocodeRequest gcrq = rp.parseOpenLSRequest(requestString);
-            if (gcrq != null)
+            if (gcrq != null) {
                 System.out.println(gcrq.toXML());
+            }
             assertNotNull(gcrq);
         }
     }
 
     /**
-     * Test open ls request roundtrip. 1: create an openls request 2: serialize
-     * it to xml string 3: use the request parser to deserialize the xml to a
-     * new openls request object 4: serialize the new openls request object to
-     * xml string 5: check if the first xml string is the same as the second xml
+     * Test open ls request roundtrip. 
+     * <ol>
+     * <li>create an openls request
+     * <li>serialize it to xml string
+     * <li>use the request parser to deserialize the xml to a new openls request
+     * object
+     * <li>serialize the new openls request object to xml string
+     * <li>check if the first xml string is the same as the second xml
      * string
-     * 
+     * </ol>
+      *
      * @throws IOException
      *             Signals that an I/O exception has occurred.
      */
@@ -131,15 +137,14 @@ public class OpenLSRequestParserTest extends TestCase {
      *            the list
      */
     private void listDirectoryFilenames(File folder, List<File> list) {
-        folder.setReadOnly();
         File[] files = folder.listFiles();
-        for (int j = 0; j < files.length; j++) {
-            if (files[j].getName().endsWith(".xml")) {
-                list.add(files[j]);
+        for (File file : files) {
+            if (file.getName().endsWith(".xml")) {
+                list.add(file);
             }
-            if (files[j].isDirectory())
-                listDirectoryFilenames(files[j], list);
+            if (file.isDirectory()) {
+                listDirectoryFilenames(file, list);
+            }
         }
     }
-
 }

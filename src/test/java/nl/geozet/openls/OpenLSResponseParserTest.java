@@ -56,12 +56,16 @@ public class OpenLSResponseParserTest extends TestCase {
     }
 
     /**
-     * Test open ls response roundtrip. 1: create an openls response 2:
-     * serialize it to xml string 3: use the response parser to deserialize the
-     * xml to a new openls response object 4: serialize the new openls object to
-     * xml string 5: check if the first xml string is the same as the second xml
-     * string
-     * 
+     * Test open ls response roundtrip.
+     * <ol>
+     * <li>create an openls response
+     * <li>serialize it to xml string
+     * <li>use the response parser to deserialize the xml to a new openls
+     * response object
+     * <li>serialize the new openls object to xml string
+     * <li>check if the first xml string is the same as the second xml string
+     * </ol>
+      *
      * @throws IOException
      *             Signals that an I/O exception has occurred.
      */
@@ -151,7 +155,6 @@ public class OpenLSResponseParserTest extends TestCase {
      *            the list
      */
     private void listDirectoryFilenames(File folder, List<File> list) {
-        folder.setReadOnly();
         File[] files = folder.listFiles();
         for (File file : files) {
             if (file.getName().endsWith(".xml")) {
@@ -162,5 +165,4 @@ public class OpenLSResponseParserTest extends TestCase {
             }
         }
     }
-
 }
