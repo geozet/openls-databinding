@@ -255,6 +255,7 @@
 					<attach>false</attach>
 					<locales>nl</locales>
 					<outputEncoding>UTF-8</outputEncoding>
+					<skipDeploy>true</skipDeploy>
 					<reportPlugins>
 						<plugin>
 							<artifactId>maven-jxr-plugin</artifactId>
