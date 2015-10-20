@@ -5,8 +5,8 @@
 #
 
 digraph G {
-	edge [fontname="arial",fontsize=10,labelfontname="arial",labelfontsize=10];
-	node [fontname="arial",fontsize=10,shape=plaintext];
+	edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
 	// nl.geozet.openls.OpenLSResponseParserTest
@@ -22,13 +22,13 @@ digraph G {
 <tr><td align="left" balign="left"> + testOpenLSResponseParser() </td></tr>
 <tr><td align="left" balign="left"> + testOpenLSResponseRoundtrip() </td></tr>
 		</table></td></tr>
-		</table>>, URL="./OpenLSResponseParserTest.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./OpenLSResponseParserTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//nl.geozet.openls.OpenLSResponseParserTest extends junit.framework.TestCase
 	c13:p -> c11:p [dir=back,arrowtail=empty];
 	// junit.framework.TestCase
 	c13 [label=<<table title="junit.framework.TestCase" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="arial italic"> TestCase </font></td></tr>
+<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> TestCase </font></td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left">  </td></tr>
@@ -86,6 +86,6 @@ digraph G {
 <tr><td align="left" balign="left"> + getName() : String </td></tr>
 <tr><td align="left" balign="left"> + setName(arg0 : String) </td></tr>
 		</table></td></tr>
-		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 
