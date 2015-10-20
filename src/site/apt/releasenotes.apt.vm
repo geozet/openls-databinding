@@ -11,30 +11,40 @@
 
 ${project.name} ${project.version} Release Notes
 
-  Dit zijn de release notes van ${project.name} versie ${project.version}. 
-  
+  Dit zijn de release notes van ${project.name} versie ${project.version}.
+
 %{toc|section=1|fromDepth=0|toDepth=1}
 
 * {${project.version} Release Notes}
 
 ** Nieuw
 
-  * 
-  
+  * release naar Maven Central via OSSRH
+
   []
+
+~~** Verbetering
+
+~~  *
+
+~~  []
+
+* {0.3 Release Notes}
 
 ** Verbetering
 
-  * 
-  
+  * verbeteringen in documentatie.
+
+  * release in github hosted repository
+
   []
 
 * {0.2 Release Notes}
 
 ** Verbetering
 
-  * verbeteringen in documentatie.  
-  
+  * verbeteringen in documentatie.
+
 * {0.1 Release Notes}
 
 ** Nieuw
