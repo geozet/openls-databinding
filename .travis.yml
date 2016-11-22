@@ -3,10 +3,21 @@ sudo: false
 language: java
 
 jdk:
-  - openjdk6
-  - openjdk7
-  - oraclejdk7
   - oraclejdk8
+  - openjdk8
+
+install:
+  # install without any testing to get dependencies in place
+  - mvn install -Dmaven.test.skip=true -B -V -fae
+
+script:
+  # execute unit and integration tests
+  - mvn -e -fae -B -Dfailsafe.useFile=false clean test verify
+  # check javadoc for lint
+  - if [ "$TRAVIS_JDK_VERSION" == oraclejdk8 ]; then
+         mvn javadoc:javadoc;
+         mvn javadoc:test-javadoc;
+    fi
 
 cache:
   directories:
