@@ -65,8 +65,6 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<debug>true</debug>
-		<github.username />
-		<github.password />
 		<github.site.dryRun>false</github.site.dryRun>
 	</properties>
 	<dependencies>
@@ -414,10 +412,8 @@
 				<groupId>com.github.github</groupId>
 				<artifactId>site-maven-plugin</artifactId>
 				<configuration>
-					<message>site update voor versie ${project.version}</message>
-					<password>${github.password}</password>
-					<userName>${github.username}</userName>
-					<host>api.github.com</host>
+					<message>Site update for version ${project.version} (rev. ${git.revision})</message>
+					<server>github</server>
 					<force>false</force>
 					<noJekyll>true</noJekyll>
 				</configuration>

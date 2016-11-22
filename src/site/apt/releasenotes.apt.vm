@@ -19,7 +19,7 @@ ${project.name} ${project.version} Release Notes
 
 ** Nieuw
 
-  * release naar Maven Central via OSSRH
+  * upgrade naar Java 8
 
   []
 
@@ -28,6 +28,14 @@ ${project.name} ${project.version} Release Notes
 ~~  *
 
 ~~  []
+
+* {0.4 Release Notes}
+
+** Nieuw
+
+  * release naar Maven Central via OSSRH
+
+  []
 
 * {0.3 Release Notes}
 
