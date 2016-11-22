@@ -10,7 +10,7 @@
 		<version>1.6</version>
 	</skin>
 	<bannerLeft>
-		<name>Geozet</name>
+		<name>Geozet OpenLS</name>
 		<href>http://geozet.github.io/openls-databinding/</href>
 	</bannerLeft>
 	<bannerRight>
@@ -23,8 +23,8 @@
 			<![CDATA[<link rel="icon" href="favicon.ico" type="image/x-icon" />]]>
 		</head>
 		<links>
-			<item name="Wiki" href="https://github.com/geozet/openls-databinding/wiki/" />
-			<item name="Issues" href="https://github.com/geozet/openls-databinding/issues/" />
+			<item name="Wiki" href="${project.url}wiki/" />
+			<item name="Issues" href="${project.issueManagement.url}" />
 		</links>
 		<menu name="Overview">
 			<item name="Release notes" href="/releasenotes.html" />
