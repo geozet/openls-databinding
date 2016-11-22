@@ -4,9 +4,9 @@ package nl.geozet.openls.databinding.gml;
  * http://schemas.opengis.net/gml/3.2.1/basicTypes.xsd
  * 
  * <pre>
- * <complexType name="CoordinatesType"> 
- * <annotation> 
- * <documentation>This
+ * &lt;complexType name="CoordinatesType"&gt; 
+ * &lt;annotation&gt; 
+ * &lt;documentation&gt;This
  * type is deprecated for tuples with ordinate values that are numbers.
  * CoordinatesType is a text string, intended to be used to record an array
  * of tuples or coordinates. While it is not possible to enforce the
@@ -20,16 +20,16 @@ package nl.geozet.openls.databinding.gml;
  * (default=" " a space) Since it is based on the XML Schema string type,
  * CoordinatesType may be used in the construction of tables of tuples or
  * arrays of tuples, including ones that contain mixed text and numeric
- * values.</documentation> 
- * </annotation> 
- * <simpleContent> 
- *  <extension base="string"> 
- *      <attribute name="decimal" type="string" default="."/>
- *      <attribute name="cs" type="string" default=","/> 
- *      <attribute name="ts" type="string" default="&#x20;"/> 
- *  </extension> 
- *  </simpleContent>
- * </complexType>
+ * values.&lt;/documentation&gt; 
+ * &lt;/annotation&gt; 
+ * &lt;simpleContent&gt; 
+ *  &lt;extension base="string"&gt; 
+ *      &lt;attribute name="decimal" type="string" default="."/&gt;
+ *      &lt;attribute name="cs" type="string" default=","/&gt; 
+ *      &lt;attribute name="ts" type="string" default="&#x20;"/&gt; 
+ *  &lt;/extension&gt; 
+ *  &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * @author strampel@atlis.nl
