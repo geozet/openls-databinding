@@ -3,7 +3,7 @@
 	 -----
 	 prinsmc@minlnv.nl
 	 -----
-	 2 aug 2010
+	 2010-08-02
 	 -----
 
 ~~ http://maven.apache.org/doxia/references/apt-format.html
@@ -19,7 +19,7 @@ ${project.name} ${project.version} Release Notes
 
 ** Nieuw
 
-  * release naar Maven Central via OSSRH
+  * upgrade naar Java 8
 
   []
 
@@ -28,6 +28,14 @@ ${project.name} ${project.version} Release Notes
 ~~  *
 
 ~~  []
+
+* {0.4 Release Notes}
+
+** Nieuw
+
+  * release naar Maven Central via OSSRH
+
+  []
 
 * {0.3 Release Notes}
 

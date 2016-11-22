@@ -2,11 +2,53 @@ sudo: false
 
 language: java
 
-jdk:
-  - openjdk6
-  - openjdk7
-  - oraclejdk7
-  - oraclejdk8
+env:
+  global:
+    # site deployment
+    - secure: "GarlX1+L7sZ1N9xEuk/WsKHdBEEpct7bPx2DcOl1rznxKSmyE3SImWDmoIkIcQnUa7091zEEu5sOlkMHvLJfLGpijGYATT9nkWvFjxnhLqqaquVHdL6qtO5LxZspArCzLC1+jfbnFFMwQuCECHfHxx97v6urKXqGSRHzaQxamU0="
+    # snapshot deployment
+    - secure: "PWSj9m4Qb0mxdyqj+XBtfxJHRKFa2pfqM1NOZQAKmn7VN92xqp0CbYqfRVGgohT27O9CQ1WxXhFZOQpcqbL6jB2jXINCgkLk7rH9zLempkhEogrZJugMpPL938rp016w1mTxIE6iXSfkUWt7JHMhVTaZtyDmM2yaHpq64A12lbU="
+    - secure: "YCIz9IIU5iOxd08Fb0qcOucoj361jHXIEa5835JD10g3hXcEzNlLnmZW5oben29WxxtkGrNAyY8kHozmlSmeh7zOoVMTMMrhKlRULUu9Z5Ww5opKs+lv4ZopUxJKQQmTsBM4a4NqHQtPB1WeF/D0Bla8A3X1GZCuR909LhcQwVM="
+
+install:
+  # install without any testing to get dependencies in place
+  - mvn install -Dmaven.test.skip=true -B -V -fae
+
+script:
+  # execute unit and integration tests
+  - mvn -e -fae -B -Dfailsafe.useFile=false clean test verify
+  # check javadoc for lint
+  - if [ "$TRAVIS_JDK_VERSION" == oraclejdk8 ]; then
+         mvn javadoc:javadoc;
+         mvn javadoc:test-javadoc;
+    fi
+
+after_success:
+  - if [ "$TRAVIS_OS_NAME" == "linux" ] && [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] &&
+       [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+         travis_wait mvn deploy --settings .travis/settings.xml -DskipTests=true -B;
+    else
+        echo "Not deploying snapshot artifact";
+    fi
+  - if [ "$TRAVIS_OS_NAME" == "linux" ] && [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] &&
+       [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
+          travis_wait mvn -e -fae -B site-deploy --settings .travis/settings.xml;
+    else
+          echo -n "not deploying maven site";
+    fi
+
+
+matrix:
+  fast_finish: true
+  include:
+    # additional builds
+    - os: linux
+      jdk: openjdk8
+      sudo: required
+      dist: trusty
+      group: edge
+    - os: linux
+      jdk: oraclejdk8
 
 cache:
   directories:
