@@ -1,14 +1,14 @@
 -classpath
-'/home/mark/workspace/openls-databinding/target/classes:/home/mark/workspace/openls-databinding/target/test-classes:/mnt/7AEE8BD2EE8B84DB/maven_repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/mnt/7AEE8BD2EE8B84DB/maven_repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/mnt/7AEE8BD2EE8B84DB/maven_repository/junit/junit/4.12/junit-4.12.jar'
+'/home/travis/build/geozet/openls-databinding/target/classes:/home/travis/build/geozet/openls-databinding/target/test-classes:/home/travis/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/travis/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/travis/.m2/repository/junit/junit/4.12/junit-4.12.jar'
 -doclet
 'org.umlgraph.doclet.UmlGraphDoc'
 -docletpath
-'/mnt/7AEE8BD2EE8B84DB/maven_repository/org/umlgraph/umlgraph/5.6.6/umlgraph-5.6.6.jar:/usr/lib/jvm/java-8-oracle/jre/../lib/tools.jar'
+'/home/travis/.m2/repository/org/umlgraph/umlgraph/5.6.6/umlgraph-5.6.6.jar:/usr/lib/jvm/java-8-oracle/jre/../lib/tools.jar'
 -encoding
 'UTF-8'
 -protected
 -sourcepath
-'/home/mark/workspace/openls-databinding/src/test/java:/home/mark/workspace/openls-databinding/target/generated-test-sources/test-annotations'
+'/home/travis/build/geozet/openls-databinding/src/test/java:/home/travis/build/geozet/openls-databinding/target/generated-test-sources/test-annotations'
 -all -hide java.* -hide javax.* -hide org.* -inferrel -inferreltype -useimports
 -author
 -bottom
@@ -16,7 +16,7 @@
 -charset
 'UTF-8'
 -d
-'/home/mark/workspace/openls-databinding/target/site/testapidocs'
+'/home/travis/build/geozet/openls-databinding/target/site/testapidocs'
 -docencoding
 'UTF-8'
 -doctitle
@@ -28,7 +28,7 @@
 -link
 '../apidocs'
 -linkoffline
-'http://docs.oracle.com/javase/8/docs/api' '/home/mark/workspace/openls-databinding/target/javadoc-bundle-options'
+'http://docs.oracle.com/javase/8/docs/api' '/home/travis/build/geozet/openls-databinding/target/javadoc-bundle-options'
 -packagesheader
 'openls-databinding'
 -tag

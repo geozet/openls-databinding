@@ -1,14 +1,14 @@
 -classpath
-'/mnt/7AEE8BD2EE8B84DB/maven_repository/log4j/log4j/1.2.17/log4j-1.2.17.jar'
+'/home/travis/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar'
 -doclet
 'org.umlgraph.doclet.UmlGraphDoc'
 -docletpath
-'/mnt/7AEE8BD2EE8B84DB/maven_repository/org/umlgraph/umlgraph/5.6.6/umlgraph-5.6.6.jar:/usr/lib/jvm/java-8-oracle/jre/../lib/tools.jar'
+'/home/travis/.m2/repository/org/umlgraph/umlgraph/5.6.6/umlgraph-5.6.6.jar:/usr/lib/jvm/java-8-oracle/jre/../lib/tools.jar'
 -encoding
 'UTF-8'
 -protected
 -sourcepath
-'/home/mark/workspace/openls-databinding/src/main/java:/home/mark/workspace/openls-databinding/target/generated-sources/annotations'
+'/home/travis/build/geozet/openls-databinding/src/main/java:/home/travis/build/geozet/openls-databinding/target/generated-sources/annotations'
 -all -hide java.* -hide javax.* -hide org.* -inferrel -inferreltype -useimports
 -author
 -bottom
@@ -16,7 +16,7 @@
 -charset
 'UTF-8'
 -d
-'/home/mark/workspace/openls-databinding/target/site/apidocs'
+'/home/travis/build/geozet/openls-databinding/target/site/apidocs'
 -docencoding
 'UTF-8'
 -doctitle
@@ -26,7 +26,7 @@
 -link
 'http://download.oracle.com/javase/7/docs/api'
 -linkoffline
-'http://docs.oracle.com/javase/8/docs/api' '/home/mark/workspace/openls-databinding/target/javadoc-bundle-options'
+'http://docs.oracle.com/javase/8/docs/api' '/home/travis/build/geozet/openls-databinding/target/javadoc-bundle-options'
 -packagesheader
 'openls-databinding'
 -tag

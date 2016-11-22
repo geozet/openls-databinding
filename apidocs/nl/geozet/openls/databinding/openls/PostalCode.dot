@@ -26,7 +26,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./PostalCode.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.Address
-	c323 [label=<<table title="nl.geozet.openls.databinding.openls.Address" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Address.html">
+	c328 [label=<<table title="nl.geozet.openls.databinding.openls.Address" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Address.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Address </td></tr>
 		</table></td></tr>
@@ -54,6 +54,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./Address.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.Address NAVASSOC nl.geozet.openls.databinding.openls.PostalCode
-	c323:p -> c320:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c328:p -> c320:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

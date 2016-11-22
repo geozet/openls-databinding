@@ -9,27 +9,8 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// nl.geozet.openls.databinding.openls.GeocodedAddress
-	c283 [label=<<table title="nl.geozet.openls.databinding.openls.GeocodedAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../openls/GeocodedAddress.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> GeocodedAddress </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left">  </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + GeocodedAddress() </td></tr>
-<tr><td align="left" balign="left"> + setPoint(point : Point) </td></tr>
-<tr><td align="left" balign="left"> + getPoint() : Point </td></tr>
-<tr><td align="left" balign="left"> + hasPoint() : boolean </td></tr>
-<tr><td align="left" balign="left"> + setAddress(address : Address) </td></tr>
-<tr><td align="left" balign="left"> + getAddress() : Address </td></tr>
-<tr><td align="left" balign="left"> + hasAddress() : boolean </td></tr>
-<tr><td align="left" balign="left"> + toXML() : String </td></tr>
-		</table></td></tr>
-		</table>>, URL="../openls/GeocodedAddress.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.gml.Point
-	c295 [label=<<table title="nl.geozet.openls.databinding.gml.Point" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Point.html">
+	c282 [label=<<table title="nl.geozet.openls.databinding.gml.Point" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Point.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Point </td></tr>
 		</table></td></tr>
@@ -47,7 +28,26 @@ digraph G {
 <tr><td align="left" balign="left"> + toXML() : String </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Point.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// nl.geozet.openls.databinding.openls.GeocodedAddress
+	c289 [label=<<table title="nl.geozet.openls.databinding.openls.GeocodedAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../openls/GeocodedAddress.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> GeocodedAddress </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + GeocodedAddress() </td></tr>
+<tr><td align="left" balign="left"> + setPoint(point : Point) </td></tr>
+<tr><td align="left" balign="left"> + getPoint() : Point </td></tr>
+<tr><td align="left" balign="left"> + hasPoint() : boolean </td></tr>
+<tr><td align="left" balign="left"> + setAddress(address : Address) </td></tr>
+<tr><td align="left" balign="left"> + getAddress() : Address </td></tr>
+<tr><td align="left" balign="left"> + hasAddress() : boolean </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
+		</table></td></tr>
+		</table>>, URL="../openls/GeocodedAddress.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.GeocodedAddress NAVASSOC nl.geozet.openls.databinding.gml.Point
-	c283:p -> c295:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c289:p -> c282:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

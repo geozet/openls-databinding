@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Building.html" title="nl.geozet.openls.databinding.openls.Building" alt="" coords="25,679,289,928"/>
-<area shape="rect" id="node1" href="./Building.html" title="&lt;TABLE&gt;" alt="" coords="14,673,299,933"/>
-<area shape="rect" id="node2_1" href="./Street.html" title="nl.geozet.openls.databinding.openls.Street" alt="" coords="335,731,507,876"/>
-<area shape="rect" id="node2" href="./Street.html" title="&lt;TABLE&gt;" alt="" coords="324,725,517,881"/>
-<area shape="rect" id="node3_2" href="./StreetAddress.html" title="nl.geozet.openls.databinding.openls.StreetAddress" alt="" coords="186,423,391,620"/>
-<area shape="rect" id="node3" href="./StreetAddress.html" title="&lt;TABLE&gt;" alt="" coords="175,417,402,625"/>
-<area shape="rect" id="node4_3" href="./Address.html" title="nl.geozet.openls.databinding.openls.Address" alt="" coords="16,11,561,364"/>
-<area shape="rect" id="node4" href="./Address.html" title="&lt;TABLE&gt;" alt="" coords="5,5,572,369"/>
+<area shape="rect" id="c352" href="./StreetAddress.html" title="nl.geozet.openls.databinding.openls.StreetAddress" alt="" coords="186,401,393,586"/>
+<area shape="rect" id="node1" href="./StreetAddress.html" title="&lt;TABLE&gt;" alt="" coords="176,395,403,591"/>
+<area shape="rect" id="c353" href="./Street.html" title="nl.geozet.openls.databinding.openls.Street" alt="" coords="71,694,244,831"/>
+<area shape="rect" id="node2" href="./Street.html" title="&lt;TABLE&gt;" alt="" coords="60,689,255,837"/>
+<area shape="rect" id="c361" href="./Building.html" title="nl.geozet.openls.databinding.openls.Building" alt="" coords="289,646,554,879"/>
+<area shape="rect" id="node3" href="./Building.html" title="&lt;TABLE&gt;" alt="" coords="279,641,564,885"/>
+<area shape="rect" id="c362" href="./Address.html" title="nl.geozet.openls.databinding.openls.Address" alt="" coords="16,11,563,341"/>
+<area shape="rect" id="node4" href="./Address.html" title="&lt;TABLE&gt;" alt="" coords="5,6,573,346"/>
 </map>

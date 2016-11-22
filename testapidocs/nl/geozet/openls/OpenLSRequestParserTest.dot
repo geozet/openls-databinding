@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// nl.geozet.openls.OpenLSRequestParserTest
-	c6 [label=<<table title="nl.geozet.openls.OpenLSRequestParserTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./OpenLSRequestParserTest.html">
+	c4 [label=<<table title="nl.geozet.openls.OpenLSRequestParserTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./OpenLSRequestParserTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> OpenLSRequestParserTest </td></tr>
 		</table></td></tr>
@@ -24,7 +24,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./OpenLSRequestParserTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//nl.geozet.openls.OpenLSRequestParserTest extends junit.framework.TestCase
-	c10:p -> c6:p [dir=back,arrowtail=empty];
+	c10:p -> c4:p [dir=back,arrowtail=empty];
 	// junit.framework.TestCase
 	c10 [label=<<table title="junit.framework.TestCase" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">

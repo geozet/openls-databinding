@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./GeocodedAddress.html" title="nl.geozet.openls.databinding.openls.GeocodedAddress" alt="" coords="183,11,395,208"/>
-<area shape="rect" id="node1" href="./GeocodedAddress.html" title="&lt;TABLE&gt;" alt="" coords="172,5,405,213"/>
-<area shape="rect" id="node4_1" href="./Address.html" title="nl.geozet.openls.databinding.openls.Address" alt="" coords="16,267,561,620"/>
-<area shape="rect" id="node4" href="./Address.html" title="&lt;TABLE&gt;" alt="" coords="5,261,572,625"/>
-<area shape="rect" id="node2_2" href="./PostalCode.html" title="nl.geozet.openls.databinding.openls.PostalCode" alt="" coords="37,705,274,850"/>
-<area shape="rect" id="node2" href="./PostalCode.html" title="&lt;TABLE&gt;" alt="" coords="26,699,285,855"/>
-<area shape="rect" id="node3_3" href="./StreetAddress.html" title="nl.geozet.openls.databinding.openls.StreetAddress" alt="" coords="319,679,525,876"/>
-<area shape="rect" id="node3" href="./StreetAddress.html" title="&lt;TABLE&gt;" alt="" coords="309,673,535,881"/>
+<area shape="rect" id="c85" href="./StreetAddress.html" title="nl.geozet.openls.databinding.openls.StreetAddress" alt="" coords="53,646,259,831"/>
+<area shape="rect" id="node1" href="./StreetAddress.html" title="&lt;TABLE&gt;" alt="" coords="43,641,269,837"/>
+<area shape="rect" id="c87" href="./PostalCode.html" title="nl.geozet.openls.databinding.openls.PostalCode" alt="" coords="303,670,542,807"/>
+<area shape="rect" id="node2" href="./PostalCode.html" title="&lt;TABLE&gt;" alt="" coords="293,665,552,813"/>
+<area shape="rect" id="c93" href="./GeocodedAddress.html" title="nl.geozet.openls.databinding.openls.GeocodedAddress" alt="" coords="183,11,396,197"/>
+<area shape="rect" id="node3" href="./GeocodedAddress.html" title="&lt;TABLE&gt;" alt="" coords="172,6,407,202"/>
+<area shape="rect" id="c101" href="./Address.html" title="nl.geozet.openls.databinding.openls.Address" alt="" coords="16,257,563,586"/>
+<area shape="rect" id="node4" href="./Address.html" title="&lt;TABLE&gt;" alt="" coords="5,251,573,591"/>
 </map>
