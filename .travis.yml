@@ -32,11 +32,15 @@ after_success:
     fi
   - if [ "$TRAVIS_OS_NAME" == "linux" ] && [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] &&
        [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-          travis_wait mvn -e -fae -B site-deploy --settings .travis/settings.xml;
+          travis_wait 30 mvn -e -fae -B site-deploy --settings .travis/settings.xml;
     else
           echo -n "not deploying maven site";
     fi
 
+addons:
+  apt:
+    packages:
+      - graphviz
 
 matrix:
   fast_finish: true
