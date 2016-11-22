@@ -2,10 +2,6 @@ sudo: false
 
 language: java
 
-jdk:
-  - oraclejdk8
-  - openjdk8
-
 install:
   # install without any testing to get dependencies in place
   - mvn install -Dmaven.test.skip=true -B -V -fae
@@ -18,6 +14,18 @@ script:
          mvn javadoc:javadoc;
          mvn javadoc:test-javadoc;
     fi
+
+matrix:
+  fast_finish: true
+  include:
+    # additional builds
+    - os: linux
+      jdk: openjdk8
+      sudo: required
+      dist: trusty
+      group: edge
+    - os: linux
+      jdk: oraclejdk8
 
 cache:
   directories:
