@@ -1,4 +1,4 @@
 nl.geozet.openls.parser
-nl.geozet.openls.databinding.common
-nl.geozet.openls.databinding.gml
 nl.geozet.openls.databinding.openls
+nl.geozet.openls.databinding.gml
+nl.geozet.openls.databinding.common

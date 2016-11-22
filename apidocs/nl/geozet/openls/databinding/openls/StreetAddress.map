@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Building.html" title="nl.geozet.openls.databinding.openls.Building" alt="" coords="23,683,289,933"/>
-<area shape="rect" id="node1" href="./Building.html" title="&lt;TABLE&gt;" alt="" coords="13,677,299,939"/>
-<area shape="rect" id="node2_1" href="./StreetAddress.html" title="nl.geozet.openls.databinding.openls.StreetAddress" alt="" coords="185,425,391,623"/>
-<area shape="rect" id="node2" href="./StreetAddress.html" title="&lt;TABLE&gt;" alt="" coords="174,419,402,629"/>
-<area shape="rect" id="node4_2" href="./Street.html" title="nl.geozet.openls.databinding.openls.Street" alt="" coords="335,735,508,881"/>
-<area shape="rect" id="node4" href="./Street.html" title="&lt;TABLE&gt;" alt="" coords="324,729,519,887"/>
-<area shape="rect" id="node3_3" href="./Address.html" title="nl.geozet.openls.databinding.openls.Address" alt="" coords="15,11,561,365"/>
-<area shape="rect" id="node3" href="./Address.html" title="&lt;TABLE&gt;" alt="" coords="4,5,572,371"/>
+<area shape="rect" id="node1_0" href="./Building.html" title="nl.geozet.openls.databinding.openls.Building" alt="" coords="25,679,289,928"/>
+<area shape="rect" id="node1" href="./Building.html" title="&lt;TABLE&gt;" alt="" coords="14,673,299,933"/>
+<area shape="rect" id="node2_1" href="./Street.html" title="nl.geozet.openls.databinding.openls.Street" alt="" coords="335,731,507,876"/>
+<area shape="rect" id="node2" href="./Street.html" title="&lt;TABLE&gt;" alt="" coords="324,725,517,881"/>
+<area shape="rect" id="node3_2" href="./StreetAddress.html" title="nl.geozet.openls.databinding.openls.StreetAddress" alt="" coords="186,423,391,620"/>
+<area shape="rect" id="node3" href="./StreetAddress.html" title="&lt;TABLE&gt;" alt="" coords="175,417,402,625"/>
+<area shape="rect" id="node4_3" href="./Address.html" title="nl.geozet.openls.databinding.openls.Address" alt="" coords="16,11,561,364"/>
+<area shape="rect" id="node4" href="./Address.html" title="&lt;TABLE&gt;" alt="" coords="5,5,572,369"/>
 </map>

@@ -1,26 +1,26 @@
 -classpath
-'/tmp/openls-databinding/target/checkout/target/classes:/tmp/openls-databinding/target/checkout/target/test-classes:/var/tmp/maven-repo/log4j/log4j/1.2.17/log4j-1.2.17.jar:/var/tmp/maven-repo/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/tmp/maven-repo/junit/junit/4.12/junit-4.12.jar'
+'/home/mark/workspace/openls-databinding/target/classes:/home/mark/workspace/openls-databinding/target/test-classes:/mnt/7AEE8BD2EE8B84DB/maven_repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/mnt/7AEE8BD2EE8B84DB/maven_repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/mnt/7AEE8BD2EE8B84DB/maven_repository/junit/junit/4.12/junit-4.12.jar'
 -doclet
 'org.umlgraph.doclet.UmlGraphDoc'
 -docletpath
-'/var/tmp/maven-repo/org/umlgraph/umlgraph/5.6.6/umlgraph-5.6.6.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/../lib/tools.jar'
+'/mnt/7AEE8BD2EE8B84DB/maven_repository/org/umlgraph/umlgraph/5.6.6/umlgraph-5.6.6.jar:/usr/lib/jvm/java-8-oracle/jre/../lib/tools.jar'
 -encoding
 'UTF-8'
 -protected
 -sourcepath
-'/tmp/openls-databinding/target/checkout/src/test/java'
+'/home/mark/workspace/openls-databinding/src/test/java:/home/mark/workspace/openls-databinding/target/generated-test-sources/test-annotations'
 -all -hide java.* -hide javax.* -hide org.* -inferrel -inferreltype -useimports
 -author
 -bottom
-'Copyright &#169; 2010&#x2013;2015 <a href="https://github.com/geozet">team GEOZET</a>. All rights reserved.'
+'Copyright &#169; 2010&#x2013;2016 <a href="https://github.com/geozet">team GEOZET</a>. All rights reserved.'
 -charset
 'UTF-8'
 -d
-'/tmp/openls-databinding/target/checkout/target/site/testapidocs'
+'/home/mark/workspace/openls-databinding/target/site/testapidocs'
 -docencoding
 'UTF-8'
 -doctitle
-'openls-databinding 0.4 Test API'
+'openls-databinding 1.0-SNAPSHOT Test API'
 -link
 'http://logging.apache.org/log4j/1.2/apidocs'
 -link
@@ -28,7 +28,7 @@
 -link
 '../apidocs'
 -linkoffline
-'http://docs.oracle.com/javase/7/docs/api' '/tmp/openls-databinding/target/checkout/target/javadoc-bundle-options'
+'http://docs.oracle.com/javase/8/docs/api' '/home/mark/workspace/openls-databinding/target/javadoc-bundle-options'
 -packagesheader
 'openls-databinding'
 -tag
@@ -36,4 +36,4 @@
 -use
 -version
 -windowtitle
-'openls-databinding 0.4 Test API'
+'openls-databinding 1.0-SNAPSHOT Test API'

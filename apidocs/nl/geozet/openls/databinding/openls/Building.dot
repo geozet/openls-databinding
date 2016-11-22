@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// nl.geozet.openls.databinding.openls.Building
-	c118 [label=<<table title="nl.geozet.openls.databinding.openls.Building" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Building.html">
+	c112 [label=<<table title="nl.geozet.openls.databinding.openls.Building" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Building.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Building </td></tr>
 		</table></td></tr>
@@ -32,7 +32,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./Building.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.StreetAddress
-	c119 [label=<<table title="nl.geozet.openls.databinding.openls.StreetAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StreetAddress.html">
+	c118 [label=<<table title="nl.geozet.openls.databinding.openls.StreetAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StreetAddress.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> StreetAddress </td></tr>
 		</table></td></tr>
@@ -51,6 +51,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./StreetAddress.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.StreetAddress NAVASSOC nl.geozet.openls.databinding.openls.Building
-	c119:p -> c118:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c118:p -> c112:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 
