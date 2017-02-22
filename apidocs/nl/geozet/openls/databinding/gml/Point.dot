@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// nl.geozet.openls.databinding.gml.Point
-	c283 [label=<<table title="nl.geozet.openls.databinding.gml.Point" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Point.html">
+	c282 [label=<<table title="nl.geozet.openls.databinding.gml.Point" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Point.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Point </td></tr>
 		</table></td></tr>
@@ -29,7 +29,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./Point.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.GeocodedAddress
-	c294 [label=<<table title="nl.geozet.openls.databinding.openls.GeocodedAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../openls/GeocodedAddress.html">
+	c289 [label=<<table title="nl.geozet.openls.databinding.openls.GeocodedAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../openls/GeocodedAddress.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> GeocodedAddress </td></tr>
 		</table></td></tr>
@@ -48,6 +48,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="../openls/GeocodedAddress.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.GeocodedAddress NAVASSOC nl.geozet.openls.databinding.gml.Point
-	c294:p -> c283:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c289:p -> c282:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

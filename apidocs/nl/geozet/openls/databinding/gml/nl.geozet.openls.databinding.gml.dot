@@ -9,27 +9,8 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// nl.geozet.openls.databinding.gml.Point
-	c37 [label=<<table title="nl.geozet.openls.databinding.gml.Point" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Point.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> Point </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left">  </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + Point() </td></tr>
-<tr><td align="left" balign="left"> + addPos(pos : Pos) </td></tr>
-<tr><td align="left" balign="left"> + getPosAt(i : int) : Pos </td></tr>
-<tr><td align="left" balign="left"> + getPosSize() : int </td></tr>
-<tr><td align="left" balign="left"> + setSrsName(srsName : String) </td></tr>
-<tr><td align="left" balign="left"> + getSrsName() : String </td></tr>
-<tr><td align="left" balign="left"> + hasSrsName() : boolean </td></tr>
-<tr><td align="left" balign="left"> + toXML() : String </td></tr>
-		</table></td></tr>
-		</table>>, URL="./Point.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.gml.Pos
-	c38 [label=<<table title="nl.geozet.openls.databinding.gml.Pos" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Pos.html">
+	c18 [label=<<table title="nl.geozet.openls.databinding.gml.Pos" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Pos.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Pos </td></tr>
 		</table></td></tr>
@@ -51,8 +32,27 @@ digraph G {
 <tr><td align="left" balign="left"> + toXML() : String </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Pos.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// nl.geozet.openls.databinding.gml.Point
+	c19 [label=<<table title="nl.geozet.openls.databinding.gml.Point" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Point.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> Point </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + Point() </td></tr>
+<tr><td align="left" balign="left"> + addPos(pos : Pos) </td></tr>
+<tr><td align="left" balign="left"> + getPosAt(i : int) : Pos </td></tr>
+<tr><td align="left" balign="left"> + getPosSize() : int </td></tr>
+<tr><td align="left" balign="left"> + setSrsName(srsName : String) </td></tr>
+<tr><td align="left" balign="left"> + getSrsName() : String </td></tr>
+<tr><td align="left" balign="left"> + hasSrsName() : boolean </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
+		</table></td></tr>
+		</table>>, URL="./Point.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.gml.CoordinatesType
-	c39 [label=<<table title="nl.geozet.openls.databinding.gml.CoordinatesType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CoordinatesType.html">
+	c20 [label=<<table title="nl.geozet.openls.databinding.gml.CoordinatesType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CoordinatesType.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CoordinatesType </td></tr>
 		</table></td></tr>
