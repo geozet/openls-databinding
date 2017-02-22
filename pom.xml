@@ -64,7 +64,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<debug>true</debug>
 		<github.site.dryRun>false</github.site.dryRun>
 	</properties>
 	<dependencies>
@@ -98,7 +97,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.6.0</version>
+					<version>3.6.1</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -123,7 +122,7 @@
 				<plugin>
 					<groupId>org.owasp</groupId>
 					<artifactId>dependency-check-maven</artifactId>
-					<version>1.4.4</version>
+					<version>1.4.5</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -173,7 +172,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
-					<version>3.0.1</version>
+					<version>3.0.2</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -234,12 +233,8 @@
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<debug>${debug}</debug>
-					<optimize>!${debug}</optimize>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
-					<showDeprecation>${debug}</showDeprecation>
-					<showWarnings>${debug}</showWarnings>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -442,9 +437,6 @@
 	<profiles>
 		<profile>
 			<id>release</id>
-			<properties>
-				<debug>false</debug>
-			</properties>
 			<build>
 				<plugins>
 					<plugin>
