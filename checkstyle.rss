@@ -46,20 +46,6 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.databinding.openls.GeocodeResponse.java">nl/geozet/openls/databinding/openls/GeocodeResponse.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  7
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.databinding.openls.Place.java">nl/geozet/openls/databinding/openls/Place.java</a>
                 </td>
                 <td>
@@ -67,6 +53,20 @@ under the License.
                 </td>
                 <td>
                   17
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.databinding.openls.GeocodeResponse.java">nl/geozet/openls/databinding/openls/GeocodeResponse.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
                 </td>
                 <td>
                   0
@@ -158,20 +158,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.databinding.openls.Building.java">nl/geozet/openls/databinding/openls/Building.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  22
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.parser.OpenLSRequestParser.java">nl/geozet/openls/parser/OpenLSRequestParser.java</a>
                 </td>
                 <td>
@@ -179,6 +165,20 @@ under the License.
                 </td>
                 <td>
                   11
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.databinding.openls.Building.java">nl/geozet/openls/databinding/openls/Building.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
                 </td>
                 <td>
                   0

@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c197" href="../gml/Point.html" title="nl.geozet.openls.databinding.gml.Point" alt="" coords="16,329,229,514"/>
-<area shape="rect" id="node1" href="../gml/Point.html" title="&lt;TABLE&gt;" alt="" coords="5,323,240,519"/>
-<area shape="rect" id="c204" href="./GeocodedAddress.html" title="nl.geozet.openls.databinding.openls.GeocodedAddress" alt="" coords="228,11,441,197"/>
-<area shape="rect" id="node2" href="./GeocodedAddress.html" title="&lt;TABLE&gt;" alt="" coords="217,6,452,202"/>
-<area shape="rect" id="c209" href="./Address.html" title="nl.geozet.openls.databinding.openls.Address" alt="" coords="275,257,821,586"/>
-<area shape="rect" id="node3" href="./Address.html" title="&lt;TABLE&gt;" alt="" coords="264,251,832,591"/>
+<area shape="rect" id="node1_0" href="../gml/Point.html" title="nl.geozet.openls.databinding.gml.Point" alt="" coords="15,347,228,546"/>
+<area shape="rect" id="node1" href="../gml/Point.html" title="&lt;TABLE&gt;" alt="" coords="4,342,239,551"/>
+<area shape="rect" id="node2_1" href="./Address.html" title="nl.geozet.openls.databinding.openls.Address" alt="" coords="273,269,820,624"/>
+<area shape="rect" id="node2" href="./Address.html" title="&lt;TABLE&gt;" alt="" coords="263,264,831,629"/>
+<area shape="rect" id="node3_2" href="./GeocodedAddress.html" title="nl.geozet.openls.databinding.openls.GeocodedAddress" alt="" coords="227,11,440,210"/>
+<area shape="rect" id="node3" href="./GeocodedAddress.html" title="&lt;TABLE&gt;" alt="" coords="216,6,451,215"/>
 </map>

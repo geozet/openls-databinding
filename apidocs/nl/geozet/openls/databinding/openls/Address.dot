@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// nl.geozet.openls.databinding.openls.StreetAddress
-	c85 [label=<<table title="nl.geozet.openls.databinding.openls.StreetAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StreetAddress.html">
+	c98 [label=<<table title="nl.geozet.openls.databinding.openls.StreetAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StreetAddress.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> StreetAddress </td></tr>
 		</table></td></tr>
@@ -29,7 +29,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./StreetAddress.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.PostalCode
-	c87 [label=<<table title="nl.geozet.openls.databinding.openls.PostalCode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PostalCode.html">
+	c99 [label=<<table title="nl.geozet.openls.databinding.openls.PostalCode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PostalCode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PostalCode </td></tr>
 		</table></td></tr>
@@ -44,27 +44,8 @@ digraph G {
 <tr><td align="left" balign="left"> + toXML() : String </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PostalCode.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// nl.geozet.openls.databinding.openls.GeocodedAddress
-	c93 [label=<<table title="nl.geozet.openls.databinding.openls.GeocodedAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GeocodedAddress.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> GeocodedAddress </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left">  </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + GeocodedAddress() </td></tr>
-<tr><td align="left" balign="left"> + setPoint(point : Point) </td></tr>
-<tr><td align="left" balign="left"> + getPoint() : Point </td></tr>
-<tr><td align="left" balign="left"> + hasPoint() : boolean </td></tr>
-<tr><td align="left" balign="left"> + setAddress(address : Address) </td></tr>
-<tr><td align="left" balign="left"> + getAddress() : Address </td></tr>
-<tr><td align="left" balign="left"> + hasAddress() : boolean </td></tr>
-<tr><td align="left" balign="left"> + toXML() : String </td></tr>
-		</table></td></tr>
-		</table>>, URL="./GeocodedAddress.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.Address
-	c101 [label=<<table title="nl.geozet.openls.databinding.openls.Address" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Address.html">
+	c104 [label=<<table title="nl.geozet.openls.databinding.openls.Address" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Address.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Address </td></tr>
 		</table></td></tr>
@@ -91,11 +72,30 @@ digraph G {
 <tr><td align="left" balign="left"> + toXML() : String </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Address.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// nl.geozet.openls.databinding.openls.GeocodedAddress NAVASSOC nl.geozet.openls.databinding.openls.Address
-	c93:p -> c101:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// nl.geozet.openls.databinding.openls.GeocodedAddress
+	c106 [label=<<table title="nl.geozet.openls.databinding.openls.GeocodedAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GeocodedAddress.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> GeocodedAddress </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + GeocodedAddress() </td></tr>
+<tr><td align="left" balign="left"> + setPoint(point : Point) </td></tr>
+<tr><td align="left" balign="left"> + getPoint() : Point </td></tr>
+<tr><td align="left" balign="left"> + hasPoint() : boolean </td></tr>
+<tr><td align="left" balign="left"> + setAddress(address : Address) </td></tr>
+<tr><td align="left" balign="left"> + getAddress() : Address </td></tr>
+<tr><td align="left" balign="left"> + hasAddress() : boolean </td></tr>
+<tr><td align="left" balign="left"> + toXML() : String </td></tr>
+		</table></td></tr>
+		</table>>, URL="./GeocodedAddress.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.Address NAVASSOC nl.geozet.openls.databinding.openls.StreetAddress
-	c101:p -> c85:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c104:p -> c98:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// nl.geozet.openls.databinding.openls.Address NAVASSOC nl.geozet.openls.databinding.openls.PostalCode
-	c101:p -> c87:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c104:p -> c99:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// nl.geozet.openls.databinding.openls.GeocodedAddress NAVASSOC nl.geozet.openls.databinding.openls.Address
+	c106:p -> c104:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 
