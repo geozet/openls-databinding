@@ -17,17 +17,27 @@ ${project.name} ${project.version} Release Notes
 
 * {${project.version} Release Notes}
 
+** Verbetering
+
+  * ...
+
+  []
+
+~~** Nieuw
+
+~~  *
+
+~~  []
+
+
+* {1.0 Release Notes}
+
 ** Nieuw
 
   * upgrade naar Java 8
 
   []
 
-~~** Verbetering
-
-~~  *
-
-~~  []
 
 * {0.4 Release Notes}
 
