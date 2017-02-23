@@ -23,7 +23,7 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 		</snapshotRepository>
 		<repository>
 			<id>ossrh</id>
@@ -63,7 +63,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
+		<project.build.sourceVersion>1.8</project.build.sourceVersion>
+		<project.build.targetVersion>1.8</project.build.targetVersion>
 		<github.site.dryRun>false</github.site.dryRun>
 	</properties>
 	<dependencies>
@@ -233,8 +234,8 @@
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
+					<source>${project.build.sourceVersion}</source>
+					<target>${project.build.targetVersion}</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -259,6 +260,7 @@
 					<locales>nl</locales>
 					<outputEncoding>UTF-8</outputEncoding>
 					<skipDeploy>true</skipDeploy>
+					<relativizeDecorationLinks>false</relativizeDecorationLinks>
 					<reportPlugins>
 						<plugin>
 							<artifactId>maven-jxr-plugin</artifactId>

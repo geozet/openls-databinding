@@ -11,7 +11,7 @@
 	</skin>
 	<bannerLeft>
 		<name>Geozet OpenLS</name>
-		<href>http://geozet.github.io/openls-databinding/</href>
+		<href>https://geozet.github.io/openls-databinding/</href>
 	</bannerLeft>
 	<bannerRight>
 		<name>${project.name}</name>
