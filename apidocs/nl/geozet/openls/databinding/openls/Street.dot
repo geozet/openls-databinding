@@ -9,42 +9,11 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// nl.geozet.openls.databinding.openls.StreetAddress
-	c335 [label=<<table title="nl.geozet.openls.databinding.openls.StreetAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StreetAddress.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> StreetAddress </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left">  </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + StreetAddress() </td></tr>
-<tr><td align="left" balign="left"> + setBuilding(building : Building) </td></tr>
-<tr><td align="left" balign="left"> + getBuilding() : Building </td></tr>
-<tr><td align="left" balign="left"> + hasBuilding() : boolean </td></tr>
-<tr><td align="left" balign="left"> + setStreet(street : Street) </td></tr>
-<tr><td align="left" balign="left"> + getStreet() : Street </td></tr>
-<tr><td align="left" balign="left"> + hasStreet() : boolean </td></tr>
-<tr><td align="left" balign="left"> + toXML() : String </td></tr>
-		</table></td></tr>
-		</table>>, URL="./StreetAddress.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.databinding.openls.Street
-	c336 [label=<<table title="nl.geozet.openls.databinding.openls.Street" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Street.html">
+	c335 [label=<<table title="nl.geozet.openls.databinding.openls.Street" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Street.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Street </td></tr>
 		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left">  </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + Street() </td></tr>
-<tr><td align="left" balign="left"> + setStreet(street : String) </td></tr>
-<tr><td align="left" balign="left"> + getStreet() : String </td></tr>
-<tr><td align="left" balign="left"> + hasStreet() : boolean </td></tr>
-<tr><td align="left" balign="left"> + toXML() : String </td></tr>
-		</table></td></tr>
 		</table>>, URL="./Street.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// nl.geozet.openls.databinding.openls.StreetAddress NAVASSOC nl.geozet.openls.databinding.openls.Street
-	c335:p -> c336:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

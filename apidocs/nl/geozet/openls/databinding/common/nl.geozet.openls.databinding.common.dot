@@ -15,15 +15,6 @@ digraph G {
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> XmlNamespaceConstants </td></tr>
 		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + OPENLS_NAMESPACE_URI : String </td></tr>
-<tr><td align="left" balign="left"> + OPENLS_NAMESPACE_PREFIX : String </td></tr>
-<tr><td align="left" balign="left"> + OGC_GML_NAMESPACE_URI : String </td></tr>
-<tr><td align="left" balign="left"> + OGC_GML_NAMESPACE_PREFIX : String </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left">  </td></tr>
-		</table></td></tr>
 		</table>>, URL="./XmlNamespaceConstants.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

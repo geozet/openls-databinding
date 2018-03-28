@@ -14,27 +14,11 @@ digraph G {
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> OpenLSRequestParserTest </td></tr>
 		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left">  </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + OpenLSRequestParserTest() </td></tr>
-<tr><td align="left" balign="left"> + testOpenLSRequestParser() </td></tr>
-<tr><td align="left" balign="left"> + testOpenLSRequestRoundtrip() </td></tr>
-		</table></td></tr>
 		</table>>, URL="./OpenLSRequestParserTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// nl.geozet.openls.OpenLSResponseParserTest
 	c1 [label=<<table title="nl.geozet.openls.OpenLSResponseParserTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OpenLSResponseParserTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> OpenLSResponseParserTest </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left">  </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + OpenLSResponseParserTest() </td></tr>
-<tr><td align="left" balign="left"> + testOpenLSResponseParser() </td></tr>
-<tr><td align="left" balign="left"> + testOpenLSResponseRoundtrip() </td></tr>
 		</table></td></tr>
 		</table>>, URL="./OpenLSResponseParserTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
