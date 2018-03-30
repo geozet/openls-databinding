@@ -42,17 +42,16 @@ addons:
     packages:
       - graphviz
 
+jdk:
+  - oraclejdk8
+  - openjdk8
+  - oraclejdk9
+
 matrix:
   fast_finish: true
-  include:
-    # additional builds
-    - os: linux
-      jdk: openjdk8
-      sudo: required
-      dist: trusty
-      group: edge
-    - os: linux
-      jdk: oraclejdk8
+  allow_failures:
+    - jdk: oraclejdk9
+
 
 cache:
   directories:
