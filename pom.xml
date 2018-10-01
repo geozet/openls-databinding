@@ -131,7 +131,7 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.7.0</version>
+				<version>3.8.0</version>
 				<configuration>
 					<source>${project.build.sourceVersion}</source>
 					<target>${project.build.targetVersion}</target>
