@@ -67,7 +67,7 @@
 		<project.build.targetVersion>1.8</project.build.targetVersion>
 		<github.site.dryRun>false</github.site.dryRun>
 		<surefire.plugin.version>2.22.1</surefire.plugin.version>
-		<source.plugin.version>3.0.1</source.plugin.version>
+		<source.plugin.version>3.1.0</source.plugin.version>
 		<javadoc.plugin.version>3.1.0</javadoc.plugin.version>
 	</properties>
 	<dependencies>
