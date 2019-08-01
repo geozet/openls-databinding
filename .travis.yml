@@ -18,19 +18,19 @@ script:
   # execute unit and integration tests
   - mvn -e -fae -B -Dfailsafe.useFile=false clean test verify
   # check javadoc for lint
-  - if [ "$TRAVIS_JDK_VERSION" == oraclejdk8 ]; then
+  - if [ "$TRAVIS_JDK_VERSION" == openjdk8 ]; then
          mvn javadoc:javadoc;
          mvn javadoc:test-javadoc;
     fi
 
 after_success:
-  - if [ "$TRAVIS_OS_NAME" == "linux" ] && [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] &&
+  - if [ "$TRAVIS_OS_NAME" == "linux" ] && [ "$TRAVIS_JDK_VERSION" == "openjdk8" ] &&
        [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
          travis_wait mvn deploy --settings .travis/settings.xml -DskipTests=true -B;
     else
         echo "Not deploying snapshot artifact";
     fi
-  - if [ "$TRAVIS_OS_NAME" == "linux" ] && [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] &&
+  - if [ "$TRAVIS_OS_NAME" == "linux" ] && [ "$TRAVIS_JDK_VERSION" == "openjdk8" ] &&
        [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
           travis_wait 30 mvn -e -fae -B site-deploy --settings .travis/settings.xml;
     else
@@ -43,14 +43,13 @@ addons:
       - graphviz
 
 jdk:
-  - oraclejdk8
   - openjdk8
-  - oraclejdk9
+  - openjdk11
 
 matrix:
   fast_finish: true
   allow_failures:
-    - jdk: oraclejdk9
+    - jdk: openjdk11
 
 
 cache:
