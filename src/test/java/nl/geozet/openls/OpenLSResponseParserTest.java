@@ -8,7 +8,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import junit.framework.TestCase;
 import nl.geozet.openls.databinding.gml.Point;
 import nl.geozet.openls.databinding.gml.Pos;
 import nl.geozet.openls.databinding.openls.Address;
@@ -23,12 +22,15 @@ import nl.geozet.openls.databinding.openls.Street;
 import nl.geozet.openls.databinding.openls.StreetAddress;
 import nl.geozet.openls.parser.OpenLSResponseParser;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /**
  * The Class OpenLSResponseParserTest.
  */
-public class OpenLSResponseParserTest extends TestCase {
+public class OpenLSResponseParserTest {
 
     /**
      * Test open ls request parser. Iterate through the sample openls response
@@ -41,7 +43,7 @@ public class OpenLSResponseParserTest extends TestCase {
     public void testOpenLSResponseParser() throws java.io.IOException {
         OpenLSResponseParser rp = new OpenLSResponseParser();
         File folder = new File("./target/test-classes/sampleresponses/");
-        List<File> fileList = new ArrayList<File>();
+        List<File> fileList = new ArrayList<>();
         listDirectoryFilenames(folder, fileList);
         java.util.Iterator<File> fileIt = fileList.iterator();
         while (fileIt.hasNext()) {
@@ -66,11 +68,9 @@ public class OpenLSResponseParserTest extends TestCase {
      * <li>check if the first xml string is the same as the second xml string
      * </ol>
       *
-     * @throws IOException
-     *             Signals that an I/O exception has occurred.
      */
-    @Test
-    public void testOpenLSResponseRoundtrip() throws java.io.IOException {
+    @org.junit.jupiter.api.Test
+    public void testOpenLSResponseRoundtrip() {
         GeocodeResponse gcr = new GeocodeResponse();
 
         GeocodeResponseList gcrl = new GeocodeResponseList();
@@ -99,8 +99,8 @@ public class OpenLSResponseParserTest extends TestCase {
         point.setSrsName("EPSG:28992");
 
         Pos pos = new Pos();
-        pos.setX(new Double(1234));
-        pos.setY(new Double(5678));
+        pos.setX(1234d);
+        pos.setY(5678d);
 
         point.addPos(pos);
         sa.setStreet(street);
@@ -156,6 +156,7 @@ public class OpenLSResponseParserTest extends TestCase {
      */
     private void listDirectoryFilenames(File folder, List<File> list) {
         File[] files = folder.listFiles();
+        assertNotNull(files);
         for (File file : files) {
             if (file.getName().endsWith(".xml")) {
                 list.add(file);

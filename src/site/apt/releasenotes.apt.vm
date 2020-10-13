@@ -19,7 +19,9 @@ ${project.name} ${project.version} Release Notes
 
 ** Verbetering
 
-  * ...
+  * Tal van dependency updates
+
+  * code cleanup
 
   []
 
