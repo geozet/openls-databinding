@@ -13,7 +13,7 @@ public class Point {
      * ref="gml:pos"/> <element ref="gml:coordinates"/> </choice> </sequence>
      * </extension> </complexContent> </complexType>
      */
-    private Vector<Pos> pos = new Vector<Pos>();;
+    private Vector<Pos> pos = new Vector<>();
     private String srsName;
 
     private boolean hasSrsName;
@@ -27,7 +27,7 @@ public class Point {
     }
 
     public Pos getPosAt(int i) {
-        return (Pos) this.pos.get(i);
+        return this.pos.get(i);
     }
 
     public int getPosSize() {

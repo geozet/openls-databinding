@@ -41,7 +41,7 @@ import nl.geozet.openls.databinding.common.XmlNamespaceConstants;
  */
 
 public class GeocodeRequest {
-    private final Vector<Address> addressList = new Vector();
+    private final Vector<Address> addressList = new Vector<>();
 
     public void addAddress(Address val) {
         this.addressList.add(val);

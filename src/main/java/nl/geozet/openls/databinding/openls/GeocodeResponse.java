@@ -16,14 +16,14 @@ public class GeocodeResponse {
      * ref="xls:GeocodeResponseList" maxOccurs="unbounded"/> </sequence>
      * </extension> </complexContent> </complexType>
      */
-    private Vector<GeocodeResponseList> geocodeResponseList = new Vector<GeocodeResponseList>();
+    private Vector<GeocodeResponseList> geocodeResponseList = new Vector<>();
 
     public void addGeocodeResponseList(GeocodeResponseList val) {
         geocodeResponseList.add(val);
     }
 
     public GeocodeResponseList getGeocodeResponseListAt(int i) {
-        return (GeocodeResponseList) geocodeResponseList.get(i);
+        return geocodeResponseList.get(i);
     }
 
     public int getGeocodeResponseListSize() {
