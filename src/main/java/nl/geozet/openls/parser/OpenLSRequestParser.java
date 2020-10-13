@@ -83,10 +83,10 @@ public class OpenLSRequestParser extends DefaultHandler {
      */
     @Override
     public void startElement(String uri, String localName, String qName,
-            Attributes attributes) throws SAXException {
+            Attributes attributes) {
         eValBuf = new StringBuffer();
         String[] nsName = qName.split(":");
-        String eName = "";
+        String eName;
         if (nsName.length > 1) {
             eName = nsName[1];
         } else {
@@ -144,10 +144,9 @@ public class OpenLSRequestParser extends DefaultHandler {
      * java.lang.String, java.lang.String)
      */
     @Override
-    public void endElement(String uri, String localName, String qName)
-            throws SAXException {
+    public void endElement(String uri, String localName, String qName) {
         String[] nsName = qName.split(":");
-        String eName = "";
+        String eName;
         if (nsName.length > 1) {
             eName = nsName[1];
         } else {
@@ -194,8 +193,7 @@ public class OpenLSRequestParser extends DefaultHandler {
      * 
      * @see org.xml.sax.helpers.DefaultHandler#characters(char[], int, int)
      */
-    public void characters(char[] ch, int start, int length)
-            throws SAXException {
+    public void characters(char[] ch, int start, int length) {
         eValBuf.append(ch, start, length);
     }
 

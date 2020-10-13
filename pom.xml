@@ -30,9 +30,6 @@
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
-	<prerequisites>
-		<maven>3.3</maven>
-	</prerequisites>
 	<issueManagement>
 		<system>GitHub</system>
 		<url>https://github.com/geozet/openls-databinding/issues/</url>
@@ -63,18 +60,21 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<project.build.sourceVersion>1.8</project.build.sourceVersion>
-		<project.build.targetVersion>1.8</project.build.targetVersion>
+		<java.version>1.8</java.version>
+		<project.build.sourceVersion>${java.version}</project.build.sourceVersion>
+		<project.build.targetVersion>${java.version}</project.build.targetVersion>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<github.site.dryRun>false</github.site.dryRun>
-		<surefire.plugin.version>2.22.2</surefire.plugin.version>
+		<surefire.plugin.version>3.0.0-M5</surefire.plugin.version>
 		<source.plugin.version>3.2.1</source.plugin.version>
 		<javadoc.plugin.version>3.2.0</javadoc.plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.13.1</version>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.7.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -97,11 +97,11 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-install-plugin</artifactId>
-				<version>2.5.2</version>
+				<version>3.0.0-M1</version>
 			</plugin>
 			<plugin>
 				<artifactId>maven-deploy-plugin</artifactId>
-				<version>2.8.2</version>
+				<version>3.0.0-M1</version>
 			</plugin>
 			<plugin>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -185,15 +185,33 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.3</version>
+				<version>3.0.0-M1</version>
 				<configuration>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<useReleaseProfile>false</useReleaseProfile>
 					<releaseProfiles>release</releaseProfiles>
 					<preparationGoals>clean install -Dmaven.test.skip=true</preparationGoals>
 					<goals>deploy nexus-staging:release</goals>
-					<pushChanges>true</pushChanges>
 				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.0.0-M3</version>
+				<executions>
+					<execution>
+						<id>enforce-maven</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>3.0</version>
+								</requireMavenVersion>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
@@ -225,8 +243,9 @@
 					<show>protected</show>
 					<useStandardDocletOptions>true</useStandardDocletOptions>
 					<links>
-						<link>http://logging.apache.org/log4j/1.2/apidocs/</link>
-						<link>http://download.oracle.com/javase/7/docs/api/</link>
+						<link>https://logging.apache.org/log4j/1.2/apidocs/</link>
+						<link>https://docs.oracle.com/javase/8/docs/api/</link>
+						<link>https://junit.org/junit5/docs/current/api/</link>
 					</links>
 					<author>true</author>
 					<defaultAuthor />
@@ -271,24 +290,22 @@
 				<reportSets>
 					<reportSet>
 						<reports>
-							<report>cim</report>
+							<report>ci-management</report>
 							<report>dependencies</report>
 							<report>dependency-convergence</report>
 							<report>dependency-management</report>
 							<report>index</report>
-							<report>issue-tracking</report>
-							<report>license</report>
+							<report>issue-management</report>
+							<report>licenses</report>
 							<report>plugin-management</report>
 							<report>plugins</report>
-							<report>project-team</report>
-							<report>scm</report>
-							<report>summary</report>
+							<report>team</report>
 							<report>distribution-management</report>
 						</reports>
 					</reportSet>
 				</reportSets>
 				<configuration>
-					<dependencyLocationsEnabled>true</dependencyLocationsEnabled>
+					<dependencyDetailsEnabled>true</dependencyDetailsEnabled>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -315,7 +332,8 @@
 				<version>6.0.2</version>
 				<configuration>
 					<name>OWASP Dependency Check</name>
-					<skip>false</skip>
+					<suppressionFile>${project.basedir}/.mvn/owasp-suppression.xml</suppressionFile>
+					<format>ALL</format>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -342,7 +360,9 @@
 				<version>3.13.0</version>
 				<configuration>
 					<rulesets>
-						<ruleset>${basedir}/pmd-ruleset.xml</ruleset>
+						<ruleset>/category/java/bestpractices.xml</ruleset>
+						<ruleset>/category/java/documentation.xml</ruleset>
+						<ruleset>/category/java/errorprone.xml</ruleset>
 					</rulesets>
 					<linkXRef>true</linkXRef>
 					<sourceEncoding>utf-8</sourceEncoding>

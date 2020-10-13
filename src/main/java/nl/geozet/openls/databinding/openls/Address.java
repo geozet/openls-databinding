@@ -22,8 +22,8 @@ public class Address {
     private String countryCode;
     private StreetAddress streetAddress;
     private PostalCode postalCode;
-    private final Vector<Place> place = new Vector<Place>();
-    private final Map<String, String> placeMap = new HashMap<String, String>();
+    private final Vector<Place> place = new Vector<>();
+    private final Map<String, String> placeMap = new HashMap<>();
 
     private boolean hasCountryCode;
     private boolean hasStreetAddress;

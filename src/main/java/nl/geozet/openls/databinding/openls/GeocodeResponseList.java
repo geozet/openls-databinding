@@ -20,7 +20,7 @@ public class GeocodeResponseList {
      * </annotation> </attribute> </complexType>
      */
 
-    private Vector<GeocodedAddress> geocodedAddress = new Vector<GeocodedAddress>();
+    private Vector<GeocodedAddress> geocodedAddress = new Vector<>();
     private int numberOfGeocodedAddresses;
 
     public void addGeocodedAddress(GeocodedAddress val) {
@@ -28,7 +28,7 @@ public class GeocodeResponseList {
     }
 
     public GeocodedAddress getGeocodedAddressAt(int i) {
-        return (GeocodedAddress) geocodedAddress.get(i);
+        return geocodedAddress.get(i);
     }
 
     public int getGeocodedAddressSize() {
@@ -46,7 +46,7 @@ public class GeocodeResponseList {
     public String toXML() {
         String xml = "<" + XmlNamespaceConstants.OPENLS_NAMESPACE_PREFIX
                 + ":GeocodeResponseList " + "numberOfGeocodedAddresses=\""
-                + Integer.toString(getGeocodedAddressSize()) + "\">";
+                + getGeocodedAddressSize() + "\">";
         for (GeocodedAddress gca : geocodedAddress) {
             xml += gca.toXML();
         }

@@ -8,7 +8,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import junit.framework.TestCase;
 import nl.geozet.openls.databinding.openls.Address;
 import nl.geozet.openls.databinding.openls.Building;
 import nl.geozet.openls.databinding.openls.GeocodeRequest;
@@ -19,12 +18,15 @@ import nl.geozet.openls.databinding.openls.Street;
 import nl.geozet.openls.databinding.openls.StreetAddress;
 import nl.geozet.openls.parser.OpenLSRequestParser;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /**
  * The Class OpenLSRequestParserTest.
  */
-public class OpenLSRequestParserTest extends TestCase {
+public class OpenLSRequestParserTest {
 
     /**
      * Test open ls request parser. Iterate through the sample openls request
@@ -37,7 +39,7 @@ public class OpenLSRequestParserTest extends TestCase {
     public void testOpenLSRequestParser() throws java.io.IOException {
         OpenLSRequestParser rp = new OpenLSRequestParser();
         File folder = new File("./target/test-classes/samplerequests/");
-        List<File> fileList = new ArrayList<File>();
+        List<File> fileList = new ArrayList<>();
         listDirectoryFilenames(folder, fileList);
         java.util.Iterator<File> fileIt = fileList.iterator();
         while (fileIt.hasNext()) {
@@ -63,11 +65,9 @@ public class OpenLSRequestParserTest extends TestCase {
      * string
      * </ol>
       *
-     * @throws IOException
-     *             Signals that an I/O exception has occurred.
      */
     @Test
-    public void testOpenLSRequestRoundtrip() throws java.io.IOException {
+    public void testOpenLSRequestRoundtrip() {
         GeocodeRequest gcr = new GeocodeRequest();
 
         Address address = new Address();
@@ -138,6 +138,7 @@ public class OpenLSRequestParserTest extends TestCase {
      */
     private void listDirectoryFilenames(File folder, List<File> list) {
         File[] files = folder.listFiles();
+        assertNotNull(files);
         for (File file : files) {
             if (file.getName().endsWith(".xml")) {
                 list.add(file);

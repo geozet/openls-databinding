@@ -3,7 +3,7 @@
 <module name="Checker">
 	<property name="severity" value="warning" />
 	<module name="TreeWalker">
-		<module name="FileContentsHolder" />
+<!--		<module name="FileContentsHolder" />-->
 		<module name="JavadocType">
 			<property name="allowUnknownTags" value="true" />
 		</module>
@@ -19,9 +19,9 @@
 		<module name="AvoidStarImport" />
 		<module name="RedundantImport" />
 		<module name="UnusedImports" />
-		<module name="LineLength">
-			<property name="max" value="100" />
-		</module>
+<!--		<module name="LineLength">-->
+<!--			<property name="max" value="100" />-->
+<!--		</module>-->
 		<module name="MethodLength">
 			<property name="max" value="50" />
 		</module>
@@ -100,7 +100,7 @@
 		<module name="MissingOverride" />
 		<module name="PackageAnnotation" />
 		<module name="JavadocMethod">
-			<property name="suppressLoadErrors" value="true" />
+<!--			<property name="suppressLoadErrors" value="true" />-->
 			<property name="tokens" value="CTOR_DEF,METHOD_DEF" />
 		</module>
 		<module name="JavadocStyle">
@@ -139,11 +139,11 @@
 	<module name="FileLength">
 		<property name="max" value="500" />
 	</module>
-	<module name="SuppressionCommentFilter">
-		<property name="offCommentFormat" value="CHECKSTYLE.OFF\: ([\w\|]+)" />
-		<property name="onCommentFormat" value="CHECKSTYLE.ON\: ([\w\|]+)" />
-		<property name="checkFormat" value="$1" />
-	</module>
+<!--	<module name="SuppressionCommentFilter">-->
+<!--		<property name="offCommentFormat" value="CHECKSTYLE.OFF\: ([\w\|]+)" />-->
+<!--		<property name="onCommentFormat" value="CHECKSTYLE.ON\: ([\w\|]+)" />-->
+<!--		<property name="checkFormat" value="$1" />-->
+<!--	</module>-->
 	<module name="NewlineAtEndOfFile">
 		<property name="lineSeparator" value="lf" />
 	</module>
