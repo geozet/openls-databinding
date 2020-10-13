@@ -1,5 +1,5 @@
-sudo: false
-
+os: linux
+dist: bionic
 language: java
 
 env:
@@ -46,11 +46,8 @@ jdk:
   - openjdk8
   - openjdk11
 
-matrix:
+jobs:
   fast_finish: true
-  allow_failures:
-    - jdk: openjdk11
-
 
 cache:
   directories:
