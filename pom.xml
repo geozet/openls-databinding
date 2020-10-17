@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.geozet</groupId>
 	<artifactId>openls-databinding</artifactId>
-	<version>1.1</version>
+	<version>1.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>openls-databinding</name>
 	<description>GEOZET Open Location Service databinding packages.</description>
@@ -44,7 +44,7 @@
 		<connection>scm:git:git@github.com:geozet/openls-databinding.git</connection>
 		<developerConnection>scm:git:git@github.com:geozet/openls-databinding.git</developerConnection>
 		<url>https://github.com/geozet/openls-databinding</url>
-		<tag>openls-databinding-1.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<licenses>
 		<license>
