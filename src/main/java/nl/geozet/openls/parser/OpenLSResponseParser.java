@@ -39,7 +39,7 @@ public class OpenLSResponseParser extends DefaultHandler {
     private SAXParser parser;
 
     /** object stack. */
-    private Stack objStack = new Stack();
+    private final Stack objStack = new Stack();
 
     /** The e val buf. */
     private StringBuffer eValBuf;
@@ -193,59 +193,58 @@ public class OpenLSResponseParser extends DefaultHandler {
         }
         if (eName.equalsIgnoreCase("GeocodeResponseList")) {
             GeocodeResponseList obj = (GeocodeResponseList) (objStack.pop());
-            if (objStack.peek().getClass() == new GeocodeResponse().getClass()) {
+            if (objStack.peek().getClass() == GeocodeResponse.class) {
                 ((GeocodeResponse) (objStack.peek()))
                         .addGeocodeResponseList(obj);
             }
         } else if (eName.equalsIgnoreCase("GeocodedAddress")) {
             GeocodedAddress obj = (GeocodedAddress) (objStack.pop());
-            if (objStack.peek().getClass() == new GeocodeResponseList()
-                    .getClass()) {
+            if (objStack.peek().getClass() == GeocodeResponseList.class) {
                 ((GeocodeResponseList) (objStack.peek()))
                         .addGeocodedAddress(obj);
             }
         } else if (eName.equalsIgnoreCase("Point")) {
             Point obj = (Point) (objStack.pop());
-            if (objStack.peek().getClass() == new GeocodedAddress().getClass()) {
+            if (objStack.peek().getClass() == GeocodedAddress.class) {
                 ((GeocodedAddress) (objStack.peek())).setPoint(obj);
             }
         } else if (eName.equalsIgnoreCase("pos")) {
             Pos obj = (Pos) (objStack.pop());
             obj.setXY(eValBuf.toString());
-            if (objStack.peek().getClass() == new Point().getClass()) {
+            if (objStack.peek().getClass() == Point.class) {
                 ((Point) (objStack.peek())).addPos(obj);
             }
         } else if (eName.equalsIgnoreCase("Address")) {
             Address obj = (Address) (objStack.pop());
-            if (objStack.peek().getClass() == new GeocodedAddress().getClass()) {
+            if (objStack.peek().getClass() == GeocodedAddress.class) {
                 ((GeocodedAddress) (objStack.peek())).setAddress(obj);
             }
         } else if (eName.equalsIgnoreCase("StreetAddress")) {
             StreetAddress obj = (StreetAddress) (objStack.pop());
-            if (objStack.peek().getClass() == new Address().getClass()) {
+            if (objStack.peek().getClass() == Address.class) {
                 ((Address) (objStack.peek())).setStreetAddress(obj);
             }
         } else if (eName.equalsIgnoreCase("Building")) {
             Building obj = (Building) (objStack.pop());
-            if (objStack.peek().getClass() == new StreetAddress().getClass()) {
+            if (objStack.peek().getClass() == StreetAddress.class) {
                 ((StreetAddress) (objStack.peek())).setBuilding(obj);
             }
         } else if (eName.equalsIgnoreCase("Street")) {
             Street obj = (Street) (objStack.pop());
             obj.setStreet(eValBuf.toString());
-            if (objStack.peek().getClass() == new StreetAddress().getClass()) {
+            if (objStack.peek().getClass() == StreetAddress.class) {
                 ((StreetAddress) (objStack.peek())).setStreet(obj);
             }
         } else if (eName.equalsIgnoreCase("Place")) {
             Place obj = (Place) (objStack.pop());
             obj.setPlace(eValBuf.toString());
-            if (objStack.peek().getClass() == new Address().getClass()) {
+            if (objStack.peek().getClass() == Address.class) {
                 ((Address) (objStack.peek())).addPlace(obj);
             }
         } else if (eName.equalsIgnoreCase("PostalCode")) {
             PostalCode obj = (PostalCode) (objStack.pop());
             obj.setPostalCode(eValBuf.toString());
-            if (objStack.peek().getClass() == new Address().getClass()) {
+            if (objStack.peek().getClass() == Address.class) {
                 ((Address) (objStack.peek())).setPostalCode(obj);
             }
         }
@@ -268,8 +267,7 @@ public class OpenLSResponseParser extends DefaultHandler {
     public GeocodeResponse getGeocodeResponse() {
         GeocodeResponse geocodeResponse = null;
         if (objStack.firstElement() != null) {
-            if (objStack.firstElement().getClass() == new GeocodeResponse()
-                    .getClass()) {
+            if (objStack.firstElement().getClass() == GeocodeResponse.class) {
                 geocodeResponse = (GeocodeResponse) objStack.firstElement();
             }
         }

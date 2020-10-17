@@ -92,6 +92,10 @@
 		<defaultGoal>install</defaultGoal>
 		<plugins>
 			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>3.1.2</version>
+			</plugin>
+			<plugin>
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.1.0</version>
 			</plugin>
@@ -208,7 +212,7 @@
 						<configuration>
 							<rules>
 								<requireMavenVersion>
-									<version>3.0</version>
+									<version>3.5</version>
 								</requireMavenVersion>
 							</rules>
 						</configuration>
