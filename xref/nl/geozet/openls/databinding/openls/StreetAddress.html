@@ -10,9 +10,9 @@
 <a class="jxr_linenumber" name="L2" href="#L2">2</a>   
 <a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> nl.geozet.openls.databinding.common.XmlNamespaceConstants;
 <a class="jxr_linenumber" name="L4" href="#L4">4</a>   
-<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../nl/geozet/openls/databinding/openls/StreetAddress.html">StreetAddress</a> {
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a name="StreetAddress" href="../../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a> {
 <a class="jxr_linenumber" name="L6" href="#L6">6</a>       <em class="jxr_comment">/*</em>
-<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <em class="jxr_comment">     * <a href="http://schemas.opengis.net/ols/1.2.0/ADT.xs" target="alexandria_uri">http://schemas.opengis.net/ols/1.2.0/ADT.xs</a>d</em>
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <em class="jxr_comment">     * <a href="http://schemas.opengis.net/ols/1.2.0/ADT.xsd" target="alexandria_uri">http://schemas.opengis.net/ols/1.2.0/ADT.xsd</a></em>
 <a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_comment">     * </em>
 <a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_comment">     * &lt;complexType name="StreetAddressType"&gt; &lt;annotation&gt; &lt;documentation&gt;A set</em>
 <a class="jxr_linenumber" name="L10" href="#L10">10</a>  <em class="jxr_comment">     * of precise and complete data elements that cannot be subdivided and that</em>
@@ -31,23 +31,23 @@
 <a class="jxr_linenumber" name="L23" href="#L23">23</a>  <em class="jxr_comment">     * type="xls:StreetAddressType"&gt; &lt;annotation&gt; &lt;documentation&gt;Structured</em>
 <a class="jxr_linenumber" name="L24" href="#L24">24</a>  <em class="jxr_comment">     * street address.&lt;/documentation&gt; &lt;/annotation&gt; &lt;/element&gt;</em>
 <a class="jxr_linenumber" name="L25" href="#L25">25</a>  <em class="jxr_comment">     */</em>
-<a class="jxr_linenumber" name="L26" href="#L26">26</a>      <strong class="jxr_keyword">private</strong> <a href="../../../../../nl/geozet/openls/databinding/openls/Building.html">Building</a> building;
-<a class="jxr_linenumber" name="L27" href="#L27">27</a>      <strong class="jxr_keyword">private</strong> <a href="../../../../../nl/geozet/openls/databinding/openls/Street.html">Street</a> street;
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>      <strong class="jxr_keyword">private</strong> <a name="Building" href="../../../../../nl/geozet/openls/databinding/openls/Building.html#Building">Building</a> building;
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>      <strong class="jxr_keyword">private</strong> <a name="Street" href="../../../../../nl/geozet/openls/databinding/openls/Street.html#Street">Street</a> street;
 <a class="jxr_linenumber" name="L28" href="#L28">28</a>  
 <a class="jxr_linenumber" name="L29" href="#L29">29</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">boolean</strong> hasBuilding;
 <a class="jxr_linenumber" name="L30" href="#L30">30</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">boolean</strong> hasStreet;
 <a class="jxr_linenumber" name="L31" href="#L31">31</a>  
-<a class="jxr_linenumber" name="L32" href="#L32">32</a>      <strong class="jxr_keyword">public</strong> <a href="../../../../../nl/geozet/openls/databinding/openls/StreetAddress.html">StreetAddress</a>() {
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>      <strong class="jxr_keyword">public</strong> <a name="StreetAddress" href="../../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a>() {
 <a class="jxr_linenumber" name="L33" href="#L33">33</a>          <strong class="jxr_keyword">this</strong>.hasBuilding = false;
 <a class="jxr_linenumber" name="L34" href="#L34">34</a>          <strong class="jxr_keyword">this</strong>.hasStreet = false;
 <a class="jxr_linenumber" name="L35" href="#L35">35</a>      }
 <a class="jxr_linenumber" name="L36" href="#L36">36</a>  
-<a class="jxr_linenumber" name="L37" href="#L37">37</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> setBuilding(<a href="../../../../../nl/geozet/openls/databinding/openls/Building.html">Building</a> building) {
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> setBuilding(<a name="Building" href="../../../../../nl/geozet/openls/databinding/openls/Building.html#Building">Building</a> building) {
 <a class="jxr_linenumber" name="L38" href="#L38">38</a>          <strong class="jxr_keyword">this</strong>.hasBuilding = <strong class="jxr_keyword">true</strong>;
 <a class="jxr_linenumber" name="L39" href="#L39">39</a>          <strong class="jxr_keyword">this</strong>.building = building;
 <a class="jxr_linenumber" name="L40" href="#L40">40</a>      }
 <a class="jxr_linenumber" name="L41" href="#L41">41</a>  
-<a class="jxr_linenumber" name="L42" href="#L42">42</a>      <strong class="jxr_keyword">public</strong> <a href="../../../../../nl/geozet/openls/databinding/openls/Building.html">Building</a> getBuilding() {
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>      <strong class="jxr_keyword">public</strong> <a name="Building" href="../../../../../nl/geozet/openls/databinding/openls/Building.html#Building">Building</a> getBuilding() {
 <a class="jxr_linenumber" name="L43" href="#L43">43</a>          <strong class="jxr_keyword">return</strong> building;
 <a class="jxr_linenumber" name="L44" href="#L44">44</a>      }
 <a class="jxr_linenumber" name="L45" href="#L45">45</a>  
@@ -55,12 +55,12 @@
 <a class="jxr_linenumber" name="L47" href="#L47">47</a>          <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">this</strong>.hasBuilding;
 <a class="jxr_linenumber" name="L48" href="#L48">48</a>      }
 <a class="jxr_linenumber" name="L49" href="#L49">49</a>  
-<a class="jxr_linenumber" name="L50" href="#L50">50</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> setStreet(<a href="../../../../../nl/geozet/openls/databinding/openls/Street.html">Street</a> street) {
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> setStreet(<a name="Street" href="../../../../../nl/geozet/openls/databinding/openls/Street.html#Street">Street</a> street) {
 <a class="jxr_linenumber" name="L51" href="#L51">51</a>          <strong class="jxr_keyword">this</strong>.hasStreet = <strong class="jxr_keyword">true</strong>;
 <a class="jxr_linenumber" name="L52" href="#L52">52</a>          <strong class="jxr_keyword">this</strong>.street = street;
 <a class="jxr_linenumber" name="L53" href="#L53">53</a>      }
 <a class="jxr_linenumber" name="L54" href="#L54">54</a>  
-<a class="jxr_linenumber" name="L55" href="#L55">55</a>      <strong class="jxr_keyword">public</strong> <a href="../../../../../nl/geozet/openls/databinding/openls/Street.html">Street</a> getStreet() {
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>      <strong class="jxr_keyword">public</strong> <a name="Street" href="../../../../../nl/geozet/openls/databinding/openls/Street.html#Street">Street</a> getStreet() {
 <a class="jxr_linenumber" name="L56" href="#L56">56</a>          <strong class="jxr_keyword">return</strong> street;
 <a class="jxr_linenumber" name="L57" href="#L57">57</a>      }
 <a class="jxr_linenumber" name="L58" href="#L58">58</a>  
@@ -82,6 +82,6 @@
 <a class="jxr_linenumber" name="L74" href="#L74">74</a>  }
 </pre>
 <hr/>
-<div id="footer">Copyright &#169; 2010&#x2013;2018 <a href="https://github.com/geozet">team GEOZET</a>. All rights reserved.</div>
+<div id="footer">Copyright &#169; 2010&#x2013;2020 <a href="https://github.com/geozet">team GEOZET</a>. All rights reserved.</div>
 </body>
 </html>

@@ -12,9 +12,9 @@
 <a class="jxr_linenumber" name="L4" href="#L4">4</a>   
 <a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">import</strong> nl.geozet.openls.databinding.common.XmlNamespaceConstants;
 <a class="jxr_linenumber" name="L6" href="#L6">6</a>   
-<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../nl/geozet/openls/databinding/openls/GeocodeResponseList.html">GeocodeResponseList</a> {
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a name="GeocodeResponseList" href="../../../../../nl/geozet/openls/databinding/openls/GeocodeResponseList.html#GeocodeResponseList">GeocodeResponseList</a> {
 <a class="jxr_linenumber" name="L8" href="#L8">8</a>       <em class="jxr_comment">/*</em>
-<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_comment">     * <a href="http://schemas.opengis.net/ols/1.2.0/LocationUtilityService.xs" target="alexandria_uri">http://schemas.opengis.net/ols/1.2.0/LocationUtilityService.xs</a>d</em>
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_comment">     * <a href="http://schemas.opengis.net/ols/1.2.0/LocationUtilityService.xsd" target="alexandria_uri">http://schemas.opengis.net/ols/1.2.0/LocationUtilityService.xsd</a></em>
 <a class="jxr_linenumber" name="L10" href="#L10">10</a>  <em class="jxr_comment">     * </em>
 <a class="jxr_linenumber" name="L11" href="#L11">11</a>  <em class="jxr_comment">     * &lt;complexType name="GeocodeResponseListType"&gt; &lt;sequence&gt; &lt;element</em>
 <a class="jxr_linenumber" name="L12" href="#L12">12</a>  <em class="jxr_comment">     * name="GeocodedAddress" type="xls:GeocodedAddressType"</em>
@@ -28,15 +28,15 @@
 <a class="jxr_linenumber" name="L20" href="#L20">20</a>  <em class="jxr_comment">     * &lt;/annotation&gt; &lt;/attribute&gt; &lt;/complexType&gt;</em>
 <a class="jxr_linenumber" name="L21" href="#L21">21</a>  <em class="jxr_comment">     */</em>
 <a class="jxr_linenumber" name="L22" href="#L22">22</a>  
-<a class="jxr_linenumber" name="L23" href="#L23">23</a>      <strong class="jxr_keyword">private</strong> Vector&lt;GeocodedAddress&gt; geocodedAddress = <strong class="jxr_keyword">new</strong> Vector&lt;GeocodedAddress&gt;();
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>      <strong class="jxr_keyword">private</strong> Vector&lt;GeocodedAddress&gt; geocodedAddress = <strong class="jxr_keyword">new</strong> Vector&lt;&gt;();
 <a class="jxr_linenumber" name="L24" href="#L24">24</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">int</strong> numberOfGeocodedAddresses;
 <a class="jxr_linenumber" name="L25" href="#L25">25</a>  
-<a class="jxr_linenumber" name="L26" href="#L26">26</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> addGeocodedAddress(<a href="../../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html">GeocodedAddress</a> val) {
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> addGeocodedAddress(<a name="GeocodedAddress" href="../../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a> val) {
 <a class="jxr_linenumber" name="L27" href="#L27">27</a>          geocodedAddress.add(val);
 <a class="jxr_linenumber" name="L28" href="#L28">28</a>      }
 <a class="jxr_linenumber" name="L29" href="#L29">29</a>  
-<a class="jxr_linenumber" name="L30" href="#L30">30</a>      <strong class="jxr_keyword">public</strong> <a href="../../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html">GeocodedAddress</a> getGeocodedAddressAt(<strong class="jxr_keyword">int</strong> i) {
-<a class="jxr_linenumber" name="L31" href="#L31">31</a>          <strong class="jxr_keyword">return</strong> (GeocodedAddress) geocodedAddress.get(i);
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>      <strong class="jxr_keyword">public</strong> <a name="GeocodedAddress" href="../../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a> getGeocodedAddressAt(<strong class="jxr_keyword">int</strong> i) {
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>          <strong class="jxr_keyword">return</strong> geocodedAddress.get(i);
 <a class="jxr_linenumber" name="L32" href="#L32">32</a>      }
 <a class="jxr_linenumber" name="L33" href="#L33">33</a>  
 <a class="jxr_linenumber" name="L34" href="#L34">34</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">int</strong> getGeocodedAddressSize() {
@@ -54,8 +54,8 @@
 <a class="jxr_linenumber" name="L46" href="#L46">46</a>      <strong class="jxr_keyword">public</strong> String toXML() {
 <a class="jxr_linenumber" name="L47" href="#L47">47</a>          String xml = <span class="jxr_string">"&lt;"</span> + XmlNamespaceConstants.OPENLS_NAMESPACE_PREFIX
 <a class="jxr_linenumber" name="L48" href="#L48">48</a>                  + <span class="jxr_string">":GeocodeResponseList "</span> + <span class="jxr_string">"numberOfGeocodedAddresses=\&quot;"</span>
-<a class="jxr_linenumber" name="L49" href="#L49">49</a>                  + Integer.toString(getGeocodedAddressSize()) + <span class="jxr_string">"\&quot;&gt;"</span>;
-<a class="jxr_linenumber" name="L50" href="#L50">50</a>          <strong class="jxr_keyword">for</strong> (GeocodedAddress gca : geocodedAddress) {
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>                  + getGeocodedAddressSize() + <span class="jxr_string">"\&quot;&gt;"</span>;
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>          <strong class="jxr_keyword">for</strong> (<a name="GeocodedAddress" href="../../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a> gca : geocodedAddress) {
 <a class="jxr_linenumber" name="L51" href="#L51">51</a>              xml += gca.toXML();
 <a class="jxr_linenumber" name="L52" href="#L52">52</a>          }
 <a class="jxr_linenumber" name="L53" href="#L53">53</a>          xml += <span class="jxr_string">"&lt;/"</span> + XmlNamespaceConstants.OPENLS_NAMESPACE_PREFIX
@@ -65,6 +65,6 @@
 <a class="jxr_linenumber" name="L57" href="#L57">57</a>  }
 </pre>
 <hr/>
-<div id="footer">Copyright &#169; 2010&#x2013;2018 <a href="https://github.com/geozet">team GEOZET</a>. All rights reserved.</div>
+<div id="footer">Copyright &#169; 2010&#x2013;2020 <a href="https://github.com/geozet">team GEOZET</a>. All rights reserved.</div>
 </body>
 </html>

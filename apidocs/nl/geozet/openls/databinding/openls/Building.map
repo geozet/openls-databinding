@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./StreetAddress.html" title="nl.geozet.openls.databinding.openls.StreetAddress" alt="" coords="45,11,251,210"/>
-<area shape="rect" id="node1" href="./StreetAddress.html" title="&lt;TABLE&gt;" alt="" coords="34,6,262,215"/>
-<area shape="rect" id="node2_1" href="./Building.html" title="nl.geozet.openls.databinding.openls.Building" alt="" coords="15,269,281,520"/>
-<area shape="rect" id="node2" href="./Building.html" title="&lt;TABLE&gt;" alt="" coords="5,264,291,525"/>
+<area shape="rect" id="node1_0" href="./StreetAddress.html" title="nl.geozet.openls.databinding.openls.StreetAddress" alt="" coords="47,11,282,208"/>
+<area shape="rect" id="node1" href="./StreetAddress.html" title="&lt;TABLE&gt;" alt="" coords="37,5,293,213"/>
+<area shape="rect" id="node2_1" href="./Building.html" title="nl.geozet.openls.databinding.openls.Building" alt="" coords="16,267,313,516"/>
+<area shape="rect" id="node2" href="./Building.html" title="&lt;TABLE&gt;" alt="" coords="5,261,324,521"/>
 </map>

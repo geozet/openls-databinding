@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./StreetAddress.html" title="nl.geozet.openls.databinding.openls.StreetAddress" alt="" coords="51,683,258,882"/>
-<area shape="rect" id="node1" href="./StreetAddress.html" title="&lt;TABLE&gt;" alt="" coords="41,678,269,887"/>
-<area shape="rect" id="node2_1" href="./PostalCode.html" title="nl.geozet.openls.databinding.openls.PostalCode" alt="" coords="303,709,542,856"/>
-<area shape="rect" id="node2" href="./PostalCode.html" title="&lt;TABLE&gt;" alt="" coords="293,704,553,861"/>
-<area shape="rect" id="node3_2" href="./GeocodedAddress.html" title="nl.geozet.openls.databinding.openls.GeocodedAddress" alt="" coords="181,11,395,210"/>
-<area shape="rect" id="node3" href="./GeocodedAddress.html" title="&lt;TABLE&gt;" alt="" coords="171,6,405,215"/>
-<area shape="rect" id="node4_3" href="./Address.html" title="nl.geozet.openls.databinding.openls.Address" alt="" coords="15,269,561,624"/>
-<area shape="rect" id="node4" href="./Address.html" title="&lt;TABLE&gt;" alt="" coords="4,264,572,629"/>
+<area shape="rect" id="node1_0" href="./StreetAddress.html" title="nl.geozet.openls.databinding.openls.StreetAddress" alt="" coords="50,679,285,876"/>
+<area shape="rect" id="node1" href="./StreetAddress.html" title="&lt;TABLE&gt;" alt="" coords="39,673,295,881"/>
+<area shape="rect" id="node2_1" href="./PostalCode.html" title="nl.geozet.openls.databinding.openls.PostalCode" alt="" coords="331,705,591,850"/>
+<area shape="rect" id="node2" href="./PostalCode.html" title="&lt;TABLE&gt;" alt="" coords="320,699,601,855"/>
+<area shape="rect" id="node3_2" href="./GeocodedAddress.html" title="nl.geozet.openls.databinding.openls.GeocodedAddress" alt="" coords="198,11,430,208"/>
+<area shape="rect" id="node3" href="./GeocodedAddress.html" title="&lt;TABLE&gt;" alt="" coords="187,5,441,213"/>
+<area shape="rect" id="node4_3" href="./Address.html" title="nl.geozet.openls.databinding.openls.Address" alt="" coords="16,267,612,620"/>
+<area shape="rect" id="node4" href="./Address.html" title="&lt;TABLE&gt;" alt="" coords="5,261,623,625"/>
 </map>
