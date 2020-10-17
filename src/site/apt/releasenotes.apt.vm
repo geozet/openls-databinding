@@ -19,11 +19,11 @@ ${project.name} ${project.version} Release Notes
 
 ** Verbetering
 
-  * Tal van dependency updates
+  * Tal van dependency en plugin updates
 
   * code cleanup
 
-  * Java 11 compliant
+  * Java 11 compliancy
 
   []
 
