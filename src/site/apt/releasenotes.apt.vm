@@ -23,6 +23,8 @@ ${project.name} ${project.version} Release Notes
 
   * code cleanup
 
+  * Java 11 compliant
+
   []
 
 ~~** Nieuw

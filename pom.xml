@@ -29,6 +29,11 @@
 			<id>ossrh</id>
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
+		<site>
+			<id>gh-pages</id>
+			<name>github pages site</name>
+			<url>scm:git:ssh://git@github.com/geozet/openls-databinding.git</url>
+		</site>
 	</distributionManagement>
 	<issueManagement>
 		<system>GitHub</system>
@@ -38,7 +43,7 @@
 	<scm>
 		<connection>scm:git:git@github.com:geozet/openls-databinding.git</connection>
 		<developerConnection>scm:git:git@github.com:geozet/openls-databinding.git</developerConnection>
-		<url>https://github.com/geozet/openls-databinding/tree/master/</url>
+		<url>https://github.com/geozet/openls-databinding</url>
 		<tag>HEAD</tag>
 	</scm>
 	<licenses>
@@ -51,7 +56,7 @@
 	</licenses>
 	<ciManagement>
 		<system>Travis-CI</system>
-		<url>https://travis-ci.org/geozet/openls-databinding/</url>
+		<url>https://travis-ci.com/github/geozet/openls-databinding</url>
 	</ciManagement>
 	<organization>
 		<name>team GEOZET</name>
@@ -65,7 +70,6 @@
 		<project.build.targetVersion>${java.version}</project.build.targetVersion>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
-		<github.site.dryRun>false</github.site.dryRun>
 		<surefire.plugin.version>3.0.0-M5</surefire.plugin.version>
 		<source.plugin.version>3.2.1</source.plugin.version>
 		<javadoc.plugin.version>3.2.0</javadoc.plugin.version>
@@ -159,27 +163,25 @@
 					<generateSitemap>true</generateSitemap>
 					<attach>false</attach>
 					<locales>nl</locales>
-					<outputEncoding>UTF-8</outputEncoding>
+					<outputEncoding>${project.build.sourceEncoding}</outputEncoding>
 					<skipDeploy>true</skipDeploy>
 					<relativizeDecorationLinks>false</relativizeDecorationLinks>
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>com.github.github</groupId>
-				<artifactId>site-maven-plugin</artifactId>
-				<version>0.12</version>
+				<artifactId>maven-scm-publish-plugin</artifactId>
 				<configuration>
-					<message>Site update for version ${project.version} (rev. ${git.revision})</message>
-					<server>github</server>
-					<force>false</force>
-					<noJekyll>true</noJekyll>
+					<content>${project.reporting.outputDirectory}</content>
+					<scmBranch>gh-pages</scmBranch>
 				</configuration>
 				<executions>
 					<execution>
-						<goals>
-							<goal>site</goal>
-						</goals>
+						<id>scm-publish</id>
 						<phase>site-deploy</phase>
+						<!-- deploy site with maven-scm-publish-plugin -->
+						<goals>
+							<goal>publish-scm</goal>
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
