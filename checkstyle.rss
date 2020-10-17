@@ -25,7 +25,7 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2010 - 2020 team GEOZET</copyright>
     <item>
-      <title>File: 21,
+      <title>File: 16,
              Errors: 0,
              Warnings: 118,
              Infos: 0
@@ -81,34 +81,6 @@ under the License.
                 </td>
                 <td>
                   4
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.parser.package-info.java">nl/geozet/openls/parser/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.databinding.gml.CoordinatesType.java">nl/geozet/openls/databinding/gml/CoordinatesType.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
                 </td>
                 <td>
                   0
@@ -186,34 +158,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.databinding.common.package-info.java">nl/geozet/openls/databinding/common/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.databinding.gml.package-info.java">nl/geozet/openls/databinding/gml/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.databinding.gml.Point.java">nl/geozet/openls/databinding/gml/Point.java</a>
                 </td>
                 <td>
@@ -263,20 +207,6 @@ under the License.
                 </td>
                 <td>
                   5
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.databinding.openls.package-info.java">nl/geozet/openls/databinding/openls/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
                 </td>
                 <td>
                   0
