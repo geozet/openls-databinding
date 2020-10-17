@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 21,
              Errors: 0,
-             Warnings: 122,
-             Infos: 4
+             Warnings: 118,
+             Infos: 0
       </title>
             <link>https://github.com/geozet/openls-databinding//checkstyle.html</link>
       <description>
@@ -259,10 +259,10 @@ under the License.
                   <a href="https://github.com/geozet/openls-databinding//checkstyle.html#nl.geozet.openls.databinding.common.XmlNamespaceConstants.java">nl/geozet/openls/databinding/common/XmlNamespaceConstants.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
-                  9
+                  5
                 </td>
                 <td>
                   0

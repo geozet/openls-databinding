@@ -47,7 +47,7 @@
 <a class="jxr_linenumber" name="L39" href="#L39">39</a>      <strong class="jxr_keyword">private</strong> SAXParser parser;
 <a class="jxr_linenumber" name="L40" href="#L40">40</a>  
 <a class="jxr_linenumber" name="L41" href="#L41">41</a>      <em class="jxr_javadoccomment">/** object stack. */</em>
-<a class="jxr_linenumber" name="L42" href="#L42">42</a>      <strong class="jxr_keyword">private</strong> Stack objStack = <strong class="jxr_keyword">new</strong> Stack();
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">final</strong> Stack objStack = <strong class="jxr_keyword">new</strong> Stack();
 <a class="jxr_linenumber" name="L43" href="#L43">43</a>  
 <a class="jxr_linenumber" name="L44" href="#L44">44</a>      <em class="jxr_javadoccomment">/** The e val buf. */</em>
 <a class="jxr_linenumber" name="L45" href="#L45">45</a>      <strong class="jxr_keyword">private</strong> StringBuffer eValBuf;
@@ -201,90 +201,88 @@
 <a class="jxr_linenumber" name="L193" href="#L193">193</a>         }
 <a class="jxr_linenumber" name="L194" href="#L194">194</a>         <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"GeocodeResponseList"</span>)) {
 <a class="jxr_linenumber" name="L195" href="#L195">195</a>             <a name="GeocodeResponseLis<a name="GeocodeResponseList" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponseList.html#GeocodeResponseList">GeocodeResponseList</a>./nl/geozet/openls/databinding/openls/GeocodeResponseList.html#GeocodeResponseList">GeocodeResponseList</a> obj = (<a name="GeocodeResponseList" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponseList.html#GeocodeResponseList">GeocodeResponseList</a>) (objStack.pop());
-<a class="jxr_linenumber" name="L196" href="#L196">196</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == <strong class="jxr_keyword">new</strong> <a name="GeocodeResponse" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponse.html#GeocodeResponse">GeocodeResponse</a>().getClass()) {
+<a class="jxr_linenumber" name="L196" href="#L196">196</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == GeocodeResponse.<strong class="jxr_keyword">class</strong>) {
 <a class="jxr_linenumber" name="L197" href="#L197">197</a>                 ((<a name="GeocodeResponse" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponse.html#GeocodeResponse">GeocodeResponse</a>) (objStack.peek()))
 <a class="jxr_linenumber" name="L198" href="#L198">198</a>                         .addGeocodeResponseList(obj);
 <a class="jxr_linenumber" name="L199" href="#L199">199</a>             }
 <a class="jxr_linenumber" name="L200" href="#L200">200</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"GeocodedAddress"</span>)) {
 <a class="jxr_linenumber" name="L201" href="#L201">201</a>             <a name="GeocodedAddres<a name="GeocodedAddress" href="../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a>../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a> obj = (<a name="GeocodedAddress" href="../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a>) (objStack.pop());
-<a class="jxr_linenumber" name="L202" href="#L202">202</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == <strong class="jxr_keyword">new</strong> <a name="GeocodeResponseList" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponseList.html#GeocodeResponseList">GeocodeResponseList</a>()
-<a class="jxr_linenumber" name="L203" href="#L203">203</a>                     .getClass()) {
-<a class="jxr_linenumber" name="L204" href="#L204">204</a>                 ((<a name="GeocodeResponseList" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponseList.html#GeocodeResponseList">GeocodeResponseList</a>) (objStack.peek()))
-<a class="jxr_linenumber" name="L205" href="#L205">205</a>                         .addGeocodedAddress(obj);
-<a class="jxr_linenumber" name="L206" href="#L206">206</a>             }
-<a class="jxr_linenumber" name="L207" href="#L207">207</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"Point"</span>)) {
-<a class="jxr_linenumber" name="L208" href="#L208">208</a>             <a name="Poin<a name="Point" href="../../../../nl/geozet/openls/databinding/gml/Point.html#Point">Point</a>ef="../../../../nl/geozet/openls/databinding/gml/Point.html#Point">Point</a> obj = (<a name="Point" href="../../../../nl/geozet/openls/databinding/gml/Point.html#Point">Point</a>) (objStack.pop());
-<a class="jxr_linenumber" name="L209" href="#L209">209</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == <strong class="jxr_keyword">new</strong> <a name="GeocodedAddress" href="../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a>().getClass()) {
-<a class="jxr_linenumber" name="L210" href="#L210">210</a>                 ((<a name="GeocodedAddress" href="../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a>) (objStack.peek())).setPoint(obj);
-<a class="jxr_linenumber" name="L211" href="#L211">211</a>             }
-<a class="jxr_linenumber" name="L212" href="#L212">212</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"pos"</span>)) {
-<a class="jxr_linenumber" name="L213" href="#L213">213</a>             <a name="Po<a name="Pos" href="../../../../nl/geozet/openls/databinding/gml/Pos.html#Pos">Pos</a>href="../../../../nl/geozet/openls/databinding/gml/Pos.html#Pos">Pos</a> obj = (<a name="Pos" href="../../../../nl/geozet/openls/databinding/gml/Pos.html#Pos">Pos</a>) (objStack.pop());
-<a class="jxr_linenumber" name="L214" href="#L214">214</a>             obj.setXY(eValBuf.toString());
-<a class="jxr_linenumber" name="L215" href="#L215">215</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == <strong class="jxr_keyword">new</strong> <a name="Point" href="../../../../nl/geozet/openls/databinding/gml/Point.html#Point">Point</a>().getClass()) {
-<a class="jxr_linenumber" name="L216" href="#L216">216</a>                 ((<a name="Point" href="../../../../nl/geozet/openls/databinding/gml/Point.html#Point">Point</a>) (objStack.peek())).addPos(obj);
-<a class="jxr_linenumber" name="L217" href="#L217">217</a>             }
-<a class="jxr_linenumber" name="L218" href="#L218">218</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"Address"</span>)) {
-<a class="jxr_linenumber" name="L219" href="#L219">219</a>             <a name="Addres<a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a> obj = (<a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>) (objStack.pop());
-<a class="jxr_linenumber" name="L220" href="#L220">220</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == <strong class="jxr_keyword">new</strong> <a name="GeocodedAddress" href="../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a>().getClass()) {
-<a class="jxr_linenumber" name="L221" href="#L221">221</a>                 ((<a name="GeocodedAddress" href="../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a>) (objStack.peek())).setAddress(obj);
-<a class="jxr_linenumber" name="L222" href="#L222">222</a>             }
-<a class="jxr_linenumber" name="L223" href="#L223">223</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"StreetAddress"</span>)) {
-<a class="jxr_linenumber" name="L224" href="#L224">224</a>             <a name="StreetAddres<a name="StreetAddress" href="../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a>./../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a> obj = (<a name="StreetAddress" href="../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a>) (objStack.pop());
-<a class="jxr_linenumber" name="L225" href="#L225">225</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == <strong class="jxr_keyword">new</strong> <a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>().getClass()) {
-<a class="jxr_linenumber" name="L226" href="#L226">226</a>                 ((<a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>) (objStack.peek())).setStreetAddress(obj);
-<a class="jxr_linenumber" name="L227" href="#L227">227</a>             }
-<a class="jxr_linenumber" name="L228" href="#L228">228</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"Building"</span>)) {
-<a class="jxr_linenumber" name="L229" href="#L229">229</a>             <a name="Buildin<a name="Building" href="../../../../nl/geozet/openls/databinding/openls/Building.html#Building">Building</a>"../../../../nl/geozet/openls/databinding/openls/Building.html#Building">Building</a> obj = (<a name="Building" href="../../../../nl/geozet/openls/databinding/openls/Building.html#Building">Building</a>) (objStack.pop());
-<a class="jxr_linenumber" name="L230" href="#L230">230</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == <strong class="jxr_keyword">new</strong> <a name="StreetAddress" href="../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a>().getClass()) {
-<a class="jxr_linenumber" name="L231" href="#L231">231</a>                 ((<a name="StreetAddress" href="../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a>) (objStack.peek())).setBuilding(obj);
-<a class="jxr_linenumber" name="L232" href="#L232">232</a>             }
-<a class="jxr_linenumber" name="L233" href="#L233">233</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"Street"</span>)) {
-<a class="jxr_linenumber" name="L234" href="#L234">234</a>             <a name="Stree<a name="Street" href="../../../../nl/geozet/openls/databinding/openls/Street.html#Street">Street</a>f="../../../../nl/geozet/openls/databinding/openls/Street.html#Street">Street</a> obj = (<a name="Street" href="../../../../nl/geozet/openls/databinding/openls/Street.html#Street">Street</a>) (objStack.pop());
-<a class="jxr_linenumber" name="L235" href="#L235">235</a>             obj.setStreet(eValBuf.toString());
-<a class="jxr_linenumber" name="L236" href="#L236">236</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == <strong class="jxr_keyword">new</strong> <a name="StreetAddress" href="../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a>().getClass()) {
-<a class="jxr_linenumber" name="L237" href="#L237">237</a>                 ((<a name="StreetAddress" href="../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a>) (objStack.peek())).setStreet(obj);
-<a class="jxr_linenumber" name="L238" href="#L238">238</a>             }
-<a class="jxr_linenumber" name="L239" href="#L239">239</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"Place"</span>)) {
-<a class="jxr_linenumber" name="L240" href="#L240">240</a>             <a name="Plac<a name="Place" href="../../../../nl/geozet/openls/databinding/openls/Place.html#Place">Place</a>ef="../../../../nl/geozet/openls/databinding/openls/Place.html#Place">Place</a> obj = (<a name="Place" href="../../../../nl/geozet/openls/databinding/openls/Place.html#Place">Place</a>) (objStack.pop());
-<a class="jxr_linenumber" name="L241" href="#L241">241</a>             obj.setPlace(eValBuf.toString());
-<a class="jxr_linenumber" name="L242" href="#L242">242</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == <strong class="jxr_keyword">new</strong> <a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>().getClass()) {
-<a class="jxr_linenumber" name="L243" href="#L243">243</a>                 ((<a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>) (objStack.peek())).addPlace(obj);
-<a class="jxr_linenumber" name="L244" href="#L244">244</a>             }
-<a class="jxr_linenumber" name="L245" href="#L245">245</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"PostalCode"</span>)) {
-<a class="jxr_linenumber" name="L246" href="#L246">246</a>             <a name="PostalCod<a name="PostalCode" href="../../../../nl/geozet/openls/databinding/openls/PostalCode.html#PostalCode">PostalCode</a>./../../../nl/geozet/openls/databinding/openls/PostalCode.html#PostalCode">PostalCode</a> obj = (<a name="PostalCode" href="../../../../nl/geozet/openls/databinding/openls/PostalCode.html#PostalCode">PostalCode</a>) (objStack.pop());
-<a class="jxr_linenumber" name="L247" href="#L247">247</a>             obj.setPostalCode(eValBuf.toString());
-<a class="jxr_linenumber" name="L248" href="#L248">248</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == <strong class="jxr_keyword">new</strong> <a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>().getClass()) {
-<a class="jxr_linenumber" name="L249" href="#L249">249</a>                 ((<a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>) (objStack.peek())).setPostalCode(obj);
-<a class="jxr_linenumber" name="L250" href="#L250">250</a>             }
-<a class="jxr_linenumber" name="L251" href="#L251">251</a>         }
-<a class="jxr_linenumber" name="L252" href="#L252">252</a>     }
-<a class="jxr_linenumber" name="L253" href="#L253">253</a> 
-<a class="jxr_linenumber" name="L254" href="#L254">254</a>     <em class="jxr_comment">/*</em>
-<a class="jxr_linenumber" name="L255" href="#L255">255</a> <em class="jxr_comment">     * (non-Javadoc)</em>
-<a class="jxr_linenumber" name="L256" href="#L256">256</a> <em class="jxr_comment">     * </em>
-<a class="jxr_linenumber" name="L257" href="#L257">257</a> <em class="jxr_comment">     * @see org.xml.sax.helpers.DefaultHandler#characters(char[], int, int)</em>
-<a class="jxr_linenumber" name="L258" href="#L258">258</a> <em class="jxr_comment">     */</em>
-<a class="jxr_linenumber" name="L259" href="#L259">259</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> characters(<strong class="jxr_keyword">char</strong>[] ch, <strong class="jxr_keyword">int</strong> start, <strong class="jxr_keyword">int</strong> length) {
-<a class="jxr_linenumber" name="L260" href="#L260">260</a>         eValBuf.append(ch, start, length);
-<a class="jxr_linenumber" name="L261" href="#L261">261</a>     }
-<a class="jxr_linenumber" name="L262" href="#L262">262</a> 
-<a class="jxr_linenumber" name="L263" href="#L263">263</a>     <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="L264" href="#L264">264</a> <em class="jxr_javadoccomment">     * Gets the geocode response.</em>
-<a class="jxr_linenumber" name="L265" href="#L265">265</a> <em class="jxr_javadoccomment">     * </em>
-<a class="jxr_linenumber" name="L266" href="#L266">266</a> <em class="jxr_javadoccomment">     * @return the geocode response</em>
-<a class="jxr_linenumber" name="L267" href="#L267">267</a> <em class="jxr_javadoccomment">     */</em>
-<a class="jxr_linenumber" name="L268" href="#L268">268</a>     <strong class="jxr_keyword">public</strong> <a name="GeocodeResponse" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponse.html#GeocodeResponse">GeocodeResponse</a> getGeocodeResponse() {
-<a class="jxr_linenumber" name="L269" href="#L269">269</a>         <a name="GeocodeResponse" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponse.html#GeocodeResponse">GeocodeResponse</a> geocodeResponse = <strong class="jxr_keyword">null</strong>;
-<a class="jxr_linenumber" name="L270" href="#L270">270</a>         <strong class="jxr_keyword">if</strong> (objStack.firstElement() != <strong class="jxr_keyword">null</strong>) {
-<a class="jxr_linenumber" name="L271" href="#L271">271</a>             <strong class="jxr_keyword">if</strong> (objStack.firstElement().getClass() == <strong class="jxr_keyword">new</strong> <a name="GeocodeResponse" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponse.html#GeocodeResponse">GeocodeResponse</a>()
-<a class="jxr_linenumber" name="L272" href="#L272">272</a>                     .getClass()) {
-<a class="jxr_linenumber" name="L273" href="#L273">273</a>                 geocodeResponse = (<a name="GeocodeResponse" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponse.html#GeocodeResponse">GeocodeResponse</a>) objStack.firstElement();
-<a class="jxr_linenumber" name="L274" href="#L274">274</a>             }
-<a class="jxr_linenumber" name="L275" href="#L275">275</a>         }
-<a class="jxr_linenumber" name="L276" href="#L276">276</a>         <strong class="jxr_keyword">return</strong> geocodeResponse;
-<a class="jxr_linenumber" name="L277" href="#L277">277</a>     }
-<a class="jxr_linenumber" name="L278" href="#L278">278</a> 
-<a class="jxr_linenumber" name="L279" href="#L279">279</a> }
+<a class="jxr_linenumber" name="L202" href="#L202">202</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == GeocodeResponseList.<strong class="jxr_keyword">class</strong>) {
+<a class="jxr_linenumber" name="L203" href="#L203">203</a>                 ((<a name="GeocodeResponseList" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponseList.html#GeocodeResponseList">GeocodeResponseList</a>) (objStack.peek()))
+<a class="jxr_linenumber" name="L204" href="#L204">204</a>                         .addGeocodedAddress(obj);
+<a class="jxr_linenumber" name="L205" href="#L205">205</a>             }
+<a class="jxr_linenumber" name="L206" href="#L206">206</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"Point"</span>)) {
+<a class="jxr_linenumber" name="L207" href="#L207">207</a>             <a name="Poin<a name="Point" href="../../../../nl/geozet/openls/databinding/gml/Point.html#Point">Point</a>ef="../../../../nl/geozet/openls/databinding/gml/Point.html#Point">Point</a> obj = (<a name="Point" href="../../../../nl/geozet/openls/databinding/gml/Point.html#Point">Point</a>) (objStack.pop());
+<a class="jxr_linenumber" name="L208" href="#L208">208</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == GeocodedAddress.<strong class="jxr_keyword">class</strong>) {
+<a class="jxr_linenumber" name="L209" href="#L209">209</a>                 ((<a name="GeocodedAddress" href="../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a>) (objStack.peek())).setPoint(obj);
+<a class="jxr_linenumber" name="L210" href="#L210">210</a>             }
+<a class="jxr_linenumber" name="L211" href="#L211">211</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"pos"</span>)) {
+<a class="jxr_linenumber" name="L212" href="#L212">212</a>             <a name="Po<a name="Pos" href="../../../../nl/geozet/openls/databinding/gml/Pos.html#Pos">Pos</a>href="../../../../nl/geozet/openls/databinding/gml/Pos.html#Pos">Pos</a> obj = (<a name="Pos" href="../../../../nl/geozet/openls/databinding/gml/Pos.html#Pos">Pos</a>) (objStack.pop());
+<a class="jxr_linenumber" name="L213" href="#L213">213</a>             obj.setXY(eValBuf.toString());
+<a class="jxr_linenumber" name="L214" href="#L214">214</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == Point.<strong class="jxr_keyword">class</strong>) {
+<a class="jxr_linenumber" name="L215" href="#L215">215</a>                 ((<a name="Point" href="../../../../nl/geozet/openls/databinding/gml/Point.html#Point">Point</a>) (objStack.peek())).addPos(obj);
+<a class="jxr_linenumber" name="L216" href="#L216">216</a>             }
+<a class="jxr_linenumber" name="L217" href="#L217">217</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"Address"</span>)) {
+<a class="jxr_linenumber" name="L218" href="#L218">218</a>             <a name="Addres<a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a> obj = (<a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>) (objStack.pop());
+<a class="jxr_linenumber" name="L219" href="#L219">219</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == GeocodedAddress.<strong class="jxr_keyword">class</strong>) {
+<a class="jxr_linenumber" name="L220" href="#L220">220</a>                 ((<a name="GeocodedAddress" href="../../../../nl/geozet/openls/databinding/openls/GeocodedAddress.html#GeocodedAddress">GeocodedAddress</a>) (objStack.peek())).setAddress(obj);
+<a class="jxr_linenumber" name="L221" href="#L221">221</a>             }
+<a class="jxr_linenumber" name="L222" href="#L222">222</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"StreetAddress"</span>)) {
+<a class="jxr_linenumber" name="L223" href="#L223">223</a>             <a name="StreetAddres<a name="StreetAddress" href="../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a>./../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a> obj = (<a name="StreetAddress" href="../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a>) (objStack.pop());
+<a class="jxr_linenumber" name="L224" href="#L224">224</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == Address.<strong class="jxr_keyword">class</strong>) {
+<a class="jxr_linenumber" name="L225" href="#L225">225</a>                 ((<a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>) (objStack.peek())).setStreetAddress(obj);
+<a class="jxr_linenumber" name="L226" href="#L226">226</a>             }
+<a class="jxr_linenumber" name="L227" href="#L227">227</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"Building"</span>)) {
+<a class="jxr_linenumber" name="L228" href="#L228">228</a>             <a name="Buildin<a name="Building" href="../../../../nl/geozet/openls/databinding/openls/Building.html#Building">Building</a>"../../../../nl/geozet/openls/databinding/openls/Building.html#Building">Building</a> obj = (<a name="Building" href="../../../../nl/geozet/openls/databinding/openls/Building.html#Building">Building</a>) (objStack.pop());
+<a class="jxr_linenumber" name="L229" href="#L229">229</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == StreetAddress.<strong class="jxr_keyword">class</strong>) {
+<a class="jxr_linenumber" name="L230" href="#L230">230</a>                 ((<a name="StreetAddress" href="../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a>) (objStack.peek())).setBuilding(obj);
+<a class="jxr_linenumber" name="L231" href="#L231">231</a>             }
+<a class="jxr_linenumber" name="L232" href="#L232">232</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"Street"</span>)) {
+<a class="jxr_linenumber" name="L233" href="#L233">233</a>             <a name="Stree<a name="Street" href="../../../../nl/geozet/openls/databinding/openls/Street.html#Street">Street</a>f="../../../../nl/geozet/openls/databinding/openls/Street.html#Street">Street</a> obj = (<a name="Street" href="../../../../nl/geozet/openls/databinding/openls/Street.html#Street">Street</a>) (objStack.pop());
+<a class="jxr_linenumber" name="L234" href="#L234">234</a>             obj.setStreet(eValBuf.toString());
+<a class="jxr_linenumber" name="L235" href="#L235">235</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == StreetAddress.<strong class="jxr_keyword">class</strong>) {
+<a class="jxr_linenumber" name="L236" href="#L236">236</a>                 ((<a name="StreetAddress" href="../../../../nl/geozet/openls/databinding/openls/StreetAddress.html#StreetAddress">StreetAddress</a>) (objStack.peek())).setStreet(obj);
+<a class="jxr_linenumber" name="L237" href="#L237">237</a>             }
+<a class="jxr_linenumber" name="L238" href="#L238">238</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"Place"</span>)) {
+<a class="jxr_linenumber" name="L239" href="#L239">239</a>             <a name="Plac<a name="Place" href="../../../../nl/geozet/openls/databinding/openls/Place.html#Place">Place</a>ef="../../../../nl/geozet/openls/databinding/openls/Place.html#Place">Place</a> obj = (<a name="Place" href="../../../../nl/geozet/openls/databinding/openls/Place.html#Place">Place</a>) (objStack.pop());
+<a class="jxr_linenumber" name="L240" href="#L240">240</a>             obj.setPlace(eValBuf.toString());
+<a class="jxr_linenumber" name="L241" href="#L241">241</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == Address.<strong class="jxr_keyword">class</strong>) {
+<a class="jxr_linenumber" name="L242" href="#L242">242</a>                 ((<a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>) (objStack.peek())).addPlace(obj);
+<a class="jxr_linenumber" name="L243" href="#L243">243</a>             }
+<a class="jxr_linenumber" name="L244" href="#L244">244</a>         } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (eName.equalsIgnoreCase(<span class="jxr_string">"PostalCode"</span>)) {
+<a class="jxr_linenumber" name="L245" href="#L245">245</a>             <a name="PostalCod<a name="PostalCode" href="../../../../nl/geozet/openls/databinding/openls/PostalCode.html#PostalCode">PostalCode</a>./../../../nl/geozet/openls/databinding/openls/PostalCode.html#PostalCode">PostalCode</a> obj = (<a name="PostalCode" href="../../../../nl/geozet/openls/databinding/openls/PostalCode.html#PostalCode">PostalCode</a>) (objStack.pop());
+<a class="jxr_linenumber" name="L246" href="#L246">246</a>             obj.setPostalCode(eValBuf.toString());
+<a class="jxr_linenumber" name="L247" href="#L247">247</a>             <strong class="jxr_keyword">if</strong> (objStack.peek().getClass() == Address.<strong class="jxr_keyword">class</strong>) {
+<a class="jxr_linenumber" name="L248" href="#L248">248</a>                 ((<a name="Address" href="../../../../nl/geozet/openls/databinding/openls/Address.html#Address">Address</a>) (objStack.peek())).setPostalCode(obj);
+<a class="jxr_linenumber" name="L249" href="#L249">249</a>             }
+<a class="jxr_linenumber" name="L250" href="#L250">250</a>         }
+<a class="jxr_linenumber" name="L251" href="#L251">251</a>     }
+<a class="jxr_linenumber" name="L252" href="#L252">252</a> 
+<a class="jxr_linenumber" name="L253" href="#L253">253</a>     <em class="jxr_comment">/*</em>
+<a class="jxr_linenumber" name="L254" href="#L254">254</a> <em class="jxr_comment">     * (non-Javadoc)</em>
+<a class="jxr_linenumber" name="L255" href="#L255">255</a> <em class="jxr_comment">     * </em>
+<a class="jxr_linenumber" name="L256" href="#L256">256</a> <em class="jxr_comment">     * @see org.xml.sax.helpers.DefaultHandler#characters(char[], int, int)</em>
+<a class="jxr_linenumber" name="L257" href="#L257">257</a> <em class="jxr_comment">     */</em>
+<a class="jxr_linenumber" name="L258" href="#L258">258</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> characters(<strong class="jxr_keyword">char</strong>[] ch, <strong class="jxr_keyword">int</strong> start, <strong class="jxr_keyword">int</strong> length) {
+<a class="jxr_linenumber" name="L259" href="#L259">259</a>         eValBuf.append(ch, start, length);
+<a class="jxr_linenumber" name="L260" href="#L260">260</a>     }
+<a class="jxr_linenumber" name="L261" href="#L261">261</a> 
+<a class="jxr_linenumber" name="L262" href="#L262">262</a>     <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L263" href="#L263">263</a> <em class="jxr_javadoccomment">     * Gets the geocode response.</em>
+<a class="jxr_linenumber" name="L264" href="#L264">264</a> <em class="jxr_javadoccomment">     * </em>
+<a class="jxr_linenumber" name="L265" href="#L265">265</a> <em class="jxr_javadoccomment">     * @return the geocode response</em>
+<a class="jxr_linenumber" name="L266" href="#L266">266</a> <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="L267" href="#L267">267</a>     <strong class="jxr_keyword">public</strong> <a name="GeocodeResponse" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponse.html#GeocodeResponse">GeocodeResponse</a> getGeocodeResponse() {
+<a class="jxr_linenumber" name="L268" href="#L268">268</a>         <a name="GeocodeResponse" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponse.html#GeocodeResponse">GeocodeResponse</a> geocodeResponse = <strong class="jxr_keyword">null</strong>;
+<a class="jxr_linenumber" name="L269" href="#L269">269</a>         <strong class="jxr_keyword">if</strong> (objStack.firstElement() != <strong class="jxr_keyword">null</strong>) {
+<a class="jxr_linenumber" name="L270" href="#L270">270</a>             <strong class="jxr_keyword">if</strong> (objStack.firstElement().getClass() == GeocodeResponse.<strong class="jxr_keyword">class</strong>) {
+<a class="jxr_linenumber" name="L271" href="#L271">271</a>                 geocodeResponse = (<a name="GeocodeResponse" href="../../../../nl/geozet/openls/databinding/openls/GeocodeResponse.html#GeocodeResponse">GeocodeResponse</a>) objStack.firstElement();
+<a class="jxr_linenumber" name="L272" href="#L272">272</a>             }
+<a class="jxr_linenumber" name="L273" href="#L273">273</a>         }
+<a class="jxr_linenumber" name="L274" href="#L274">274</a>         <strong class="jxr_keyword">return</strong> geocodeResponse;
+<a class="jxr_linenumber" name="L275" href="#L275">275</a>     }
+<a class="jxr_linenumber" name="L276" href="#L276">276</a> 
+<a class="jxr_linenumber" name="L277" href="#L277">277</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2010&#x2013;2020 <a href="https://github.com/geozet">team GEOZET</a>. All rights reserved.</div>

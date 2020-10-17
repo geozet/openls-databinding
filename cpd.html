@@ -95,66 +95,6 @@
 <th>Regel</th></tr>
 <tr class="b">
 <td>nl/geozet/openls/parser/OpenLSRequestParser.java</td>
-<td><a href="./xref/nl/geozet/openls/parser/OpenLSRequestParser.html#L158">158</a></td></tr>
-<tr class="a">
-<td>nl/geozet/openls/parser/OpenLSResponseParser.java</td>
-<td><a href="./xref/nl/geozet/openls/parser/OpenLSResponseParser.html#L221">221</a></td></tr>
-<tr class="b"><td colspan='2'>
-<div>
-<pre>                ((GeocodeRequest) (objStack.peek())).addAddress(obj);
-            }
-        } else if (eName.equalsIgnoreCase(&quot;StreetAddress&quot;)) {
-            StreetAddress obj = (StreetAddress) (objStack.pop());
-            if (objStack.peek().getClass() == new Address().getClass()) {
-                ((Address) (objStack.peek())).setStreetAddress(obj);
-            }
-        } else if (eName.equalsIgnoreCase(&quot;Building&quot;)) {
-            Building obj = (Building) (objStack.pop());
-            if (objStack.peek().getClass() == new StreetAddress().getClass()) {
-                ((StreetAddress) (objStack.peek())).setBuilding(obj);
-            }
-        } else if (eName.equalsIgnoreCase(&quot;Street&quot;)) {
-            Street obj = (Street) (objStack.pop());
-            obj.setStreet(eValBuf.toString());
-            if (objStack.peek().getClass() == new StreetAddress().getClass()) {
-                ((StreetAddress) (objStack.peek())).setStreet(obj);
-            }
-        } else if (eName.equalsIgnoreCase(&quot;Place&quot;)) {
-            Place obj = (Place) (objStack.pop());
-            obj.setPlace(eValBuf.toString());
-            if (objStack.peek().getClass() == new Address().getClass()) {
-                ((Address) (objStack.peek())).addPlace(obj);
-            }
-        } else if (eName.equalsIgnoreCase(&quot;PostalCode&quot;)) {
-            PostalCode obj = (PostalCode) (objStack.pop());
-            obj.setPostalCode(eValBuf.toString());
-            if (objStack.peek().getClass() == new Address().getClass()) {
-                ((Address) (objStack.peek())).setPostalCode(obj);
-            }
-        }
-    }
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.xml.sax.helpers.DefaultHandler#characters(char[], int, int)
-     */
-    public void characters(char[] ch, int start, int length) {
-        eValBuf.append(ch, start, length);
-    }
-
-    /**
-     * Gets the geocode request.
-     * 
-     * @return the geocode request
-     */
-    public GeocodeRequest getGeocodeRequest() {</pre></div></td></tr></table>
-<table border="0" class="table table-striped">
-<tr class="a">
-<th>Bestand</th>
-<th>Regel</th></tr>
-<tr class="b">
-<td>nl/geozet/openls/parser/OpenLSRequestParser.java</td>
 <td><a href="./xref/nl/geozet/openls/parser/OpenLSRequestParser.html#L98">98</a></td></tr>
 <tr class="a">
 <td>nl/geozet/openls/parser/OpenLSResponseParser.java</td>
@@ -218,7 +158,67 @@
         } else {
             eName = nsName[0];
         }
-        if (eName.equalsIgnoreCase(&quot;Address&quot;)) {</pre></div></td></tr></table></section>
+        if (eName.equalsIgnoreCase(&quot;Address&quot;)) {</pre></div></td></tr></table>
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Bestand</th>
+<th>Regel</th></tr>
+<tr class="b">
+<td>nl/geozet/openls/parser/OpenLSRequestParser.java</td>
+<td><a href="./xref/nl/geozet/openls/parser/OpenLSRequestParser.html#L158">158</a></td></tr>
+<tr class="a">
+<td>nl/geozet/openls/parser/OpenLSResponseParser.java</td>
+<td><a href="./xref/nl/geozet/openls/parser/OpenLSResponseParser.html#L220">220</a></td></tr>
+<tr class="b"><td colspan='2'>
+<div>
+<pre>                ((GeocodeRequest) (objStack.peek())).addAddress(obj);
+            }
+        } else if (eName.equalsIgnoreCase(&quot;StreetAddress&quot;)) {
+            StreetAddress obj = (StreetAddress) (objStack.pop());
+            if (objStack.peek().getClass() == Address.class) {
+                ((Address) (objStack.peek())).setStreetAddress(obj);
+            }
+        } else if (eName.equalsIgnoreCase(&quot;Building&quot;)) {
+            Building obj = (Building) (objStack.pop());
+            if (objStack.peek().getClass() == StreetAddress.class) {
+                ((StreetAddress) (objStack.peek())).setBuilding(obj);
+            }
+        } else if (eName.equalsIgnoreCase(&quot;Street&quot;)) {
+            Street obj = (Street) (objStack.pop());
+            obj.setStreet(eValBuf.toString());
+            if (objStack.peek().getClass() == StreetAddress.class) {
+                ((StreetAddress) (objStack.peek())).setStreet(obj);
+            }
+        } else if (eName.equalsIgnoreCase(&quot;Place&quot;)) {
+            Place obj = (Place) (objStack.pop());
+            obj.setPlace(eValBuf.toString());
+            if (objStack.peek().getClass() == Address.class) {
+                ((Address) (objStack.peek())).addPlace(obj);
+            }
+        } else if (eName.equalsIgnoreCase(&quot;PostalCode&quot;)) {
+            PostalCode obj = (PostalCode) (objStack.pop());
+            obj.setPostalCode(eValBuf.toString());
+            if (objStack.peek().getClass() == Address.class) {
+                ((Address) (objStack.peek())).setPostalCode(obj);
+            }
+        }
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.xml.sax.helpers.DefaultHandler#characters(char[], int, int)
+     */
+    public void characters(char[] ch, int start, int length) {
+        eValBuf.append(ch, start, length);
+    }
+
+    /**
+     * Gets the geocode request.
+     * 
+     * @return the geocode request
+     */
+    public GeocodeRequest getGeocodeRequest() {</pre></div></td></tr></table></section>
         </div>
       </div>
     </div>
